@@ -17,13 +17,7 @@ export default defineConfig({
       }
     },
     // Optimize bundle size
-    minify: 'terser',
-    terserOptions: {
-      compress: {
-        drop_console: true, // Remove console.log in production
-        drop_debugger: true
-      }
-    }
+    minify: 'terser'
   },
   server: {
     port: 3000,
