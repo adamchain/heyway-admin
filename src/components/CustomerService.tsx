@@ -157,8 +157,8 @@ const CustomerService: React.FC = () => {
     });
 
     const updateTicketStatus = (ticketId: string, newStatus: SupportTicket['status']) => {
-        setTickets(prev => prev.map(ticket => 
-            ticket.id === ticketId 
+        setTickets(prev => prev.map(ticket =>
+            ticket.id === ticketId
                 ? { ...ticket, status: newStatus, updatedAt: new Date() }
                 : ticket
         ));
@@ -186,11 +186,11 @@ const CustomerService: React.FC = () => {
 
     if (loading) {
         return (
-            <div style={{ 
-                padding: '20px', 
-                display: 'flex', 
-                justifyContent: 'center', 
-                alignItems: 'center', 
+            <div style={{
+                padding: '20px',
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center',
                 height: '50vh',
                 fontSize: '18px'
             }}>
@@ -207,16 +207,16 @@ const CustomerService: React.FC = () => {
             </div>
 
             {/* Metrics Cards */}
-            <div style={{ 
-                display: 'grid', 
-                gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', 
-                gap: '20px', 
-                marginBottom: '30px' 
+            <div style={{
+                display: 'grid',
+                gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))',
+                gap: '20px',
+                marginBottom: '30px'
             }}>
-                <div style={{ 
-                    padding: '20px', 
+                <div style={{
+                    padding: '20px',
                     backgroundColor: 'white',
-                    borderRadius: '12px', 
+                    borderRadius: '12px',
                     boxShadow: '0 2px 10px rgba(0,0,0,0.1)',
                     borderLeft: '4px solid #3498db'
                 }}>
@@ -226,10 +226,10 @@ const CustomerService: React.FC = () => {
                     </p>
                 </div>
 
-                <div style={{ 
-                    padding: '20px', 
+                <div style={{
+                    padding: '20px',
                     backgroundColor: 'white',
-                    borderRadius: '12px', 
+                    borderRadius: '12px',
                     boxShadow: '0 2px 10px rgba(0,0,0,0.1)',
                     borderLeft: '4px solid #e74c3c'
                 }}>
@@ -239,10 +239,10 @@ const CustomerService: React.FC = () => {
                     </p>
                 </div>
 
-                <div style={{ 
-                    padding: '20px', 
+                <div style={{
+                    padding: '20px',
                     backgroundColor: 'white',
-                    borderRadius: '12px', 
+                    borderRadius: '12px',
                     boxShadow: '0 2px 10px rgba(0,0,0,0.1)',
                     borderLeft: '4px solid #27ae60'
                 }}>
@@ -252,10 +252,10 @@ const CustomerService: React.FC = () => {
                     </p>
                 </div>
 
-                <div style={{ 
-                    padding: '20px', 
+                <div style={{
+                    padding: '20px',
                     backgroundColor: 'white',
-                    borderRadius: '12px', 
+                    borderRadius: '12px',
                     boxShadow: '0 2px 10px rgba(0,0,0,0.1)',
                     borderLeft: '4px solid #f39c12'
                 }}>
@@ -265,10 +265,10 @@ const CustomerService: React.FC = () => {
                     </p>
                 </div>
 
-                <div style={{ 
-                    padding: '20px', 
+                <div style={{
+                    padding: '20px',
                     backgroundColor: 'white',
-                    borderRadius: '12px', 
+                    borderRadius: '12px',
                     boxShadow: '0 2px 10px rgba(0,0,0,0.1)',
                     borderLeft: '4px solid #9b59b6'
                 }}>
@@ -278,10 +278,10 @@ const CustomerService: React.FC = () => {
                     </p>
                 </div>
 
-                <div style={{ 
-                    padding: '20px', 
+                <div style={{
+                    padding: '20px',
                     backgroundColor: 'white',
-                    borderRadius: '12px', 
+                    borderRadius: '12px',
                     boxShadow: '0 2px 10px rgba(0,0,0,0.1)',
                     borderLeft: '4px solid #e67e22'
                 }}>
@@ -293,10 +293,10 @@ const CustomerService: React.FC = () => {
             </div>
 
             {/* Filters */}
-            <div style={{ 
-                backgroundColor: 'white', 
-                padding: '20px', 
-                borderRadius: '12px', 
+            <div style={{
+                backgroundColor: 'white',
+                padding: '20px',
+                borderRadius: '12px',
                 boxShadow: '0 2px 10px rgba(0,0,0,0.1)',
                 marginBottom: '20px',
                 display: 'flex',
@@ -307,8 +307,8 @@ const CustomerService: React.FC = () => {
                     <label style={{ display: 'block', marginBottom: '5px', fontWeight: 'bold', color: '#2c3e50' }}>
                         Filter by Status:
                     </label>
-                    <select 
-                        value={filterStatus} 
+                    <select
+                        value={filterStatus}
                         onChange={(e) => setFilterStatus(e.target.value)}
                         style={{
                             padding: '8px 12px',
@@ -329,8 +329,8 @@ const CustomerService: React.FC = () => {
                     <label style={{ display: 'block', marginBottom: '5px', fontWeight: 'bold', color: '#2c3e50' }}>
                         Filter by Priority:
                     </label>
-                    <select 
-                        value={filterPriority} 
+                    <select
+                        value={filterPriority}
                         onChange={(e) => setFilterPriority(e.target.value)}
                         style={{
                             padding: '8px 12px',
@@ -349,9 +349,9 @@ const CustomerService: React.FC = () => {
             </div>
 
             {/* Tickets Table */}
-            <div style={{ 
-                backgroundColor: 'white', 
-                borderRadius: '12px', 
+            <div style={{
+                backgroundColor: 'white',
+                borderRadius: '12px',
                 boxShadow: '0 2px 10px rgba(0,0,0,0.1)',
                 overflow: 'hidden'
             }}>
@@ -502,7 +502,7 @@ const CustomerService: React.FC = () => {
                             <h3 style={{ color: '#2c3e50', marginBottom: '10px' }}>Ticket Details</h3>
                             <p><strong>Subject:</strong> {selectedTicket.subject}</p>
                             <p><strong>Category:</strong> {selectedTicket.category}</p>
-                            <p><strong>Priority:</strong> 
+                            <p><strong>Priority:</strong>
                                 <span style={{
                                     padding: '2px 6px',
                                     borderRadius: '3px',
@@ -515,7 +515,7 @@ const CustomerService: React.FC = () => {
                                     {selectedTicket.priority.toUpperCase()}
                                 </span>
                             </p>
-                            <p><strong>Status:</strong> 
+                            <p><strong>Status:</strong>
                                 <span style={{
                                     padding: '2px 6px',
                                     borderRadius: '3px',
@@ -537,9 +537,9 @@ const CustomerService: React.FC = () => {
 
                         <div style={{ marginBottom: '20px' }}>
                             <h3 style={{ color: '#2c3e50', marginBottom: '10px' }}>Description</h3>
-                            <p style={{ 
-                                backgroundColor: '#f8f9fa', 
-                                padding: '15px', 
+                            <p style={{
+                                backgroundColor: '#f8f9fa',
+                                padding: '15px',
                                 borderRadius: '6px',
                                 border: '1px solid #ecf0f1'
                             }}>
@@ -550,9 +550,9 @@ const CustomerService: React.FC = () => {
                         {selectedTicket.resolution && (
                             <div style={{ marginBottom: '20px' }}>
                                 <h3 style={{ color: '#2c3e50', marginBottom: '10px' }}>Resolution</h3>
-                                <p style={{ 
-                                    backgroundColor: '#e8f5e8', 
-                                    padding: '15px', 
+                                <p style={{
+                                    backgroundColor: '#e8f5e8',
+                                    padding: '15px',
                                     borderRadius: '6px',
                                     border: '1px solid #27ae60',
                                     color: '#155724'
@@ -580,7 +580,7 @@ const CustomerService: React.FC = () => {
                                 <button
                                     onClick={() => {
                                         updateTicketStatus(selectedTicket.id, 'resolved');
-                                        setSelectedTicket({...selectedTicket, status: 'resolved', resolution: 'Issue resolved by support team'});
+                                        setSelectedTicket({ ...selectedTicket, status: 'resolved', resolution: 'Issue resolved by support team' });
                                     }}
                                     style={{
                                         padding: '10px 20px',

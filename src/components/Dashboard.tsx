@@ -20,8 +20,8 @@ const Dashboard: React.FC = () => {
     const [calls, setCalls] = useState<Call[]>([]);
     const [subscriptions, setSubscriptions] = useState<Subscription[]>([]);
     const [users, setUsers] = useState<any[]>([]);
-    const [automations] = useState<any[]>([]);
-    const [feedbacks] = useState<any[]>([]);
+    const [automations, setAutomations] = useState<any[]>([]);
+    const [feedbacks, setFeedbacks] = useState<any[]>([]);
     const [loading, setLoading] = useState(true);
     const [metrics, setMetrics] = useState<DashboardMetrics>({
         totalUsers: 0,

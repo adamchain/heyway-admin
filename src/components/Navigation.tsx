@@ -34,9 +34,9 @@ const Navigation: React.FC<NavigationProps> = ({ activeTab, onTabChange, onLogou
                 margin: '0 auto'
             }}>
                 <div style={{ display: 'flex', alignItems: 'center' }}>
-                    <h1 style={{ 
-                        color: 'white', 
-                        margin: 0, 
+                    <h1 style={{
+                        color: 'white',
+                        margin: 0,
                         fontSize: '24px',
                         fontWeight: 'bold'
                     }}>

@@ -17,7 +17,7 @@ function App() {
     // Check if user is already authenticated
     const authStatus = localStorage.getItem('adminAuth');
     const user = localStorage.getItem('adminUser');
-    
+
     if (authStatus === 'true' && user) {
       setIsAuthenticated(true);
       setCurrentUser(user);
@@ -53,11 +53,11 @@ function App() {
         return (
           <div style={{ padding: '20px', backgroundColor: '#f8f9fa', minHeight: '100vh' }}>
             <h1 style={{ color: '#2c3e50', marginBottom: '20px' }}>Settings</h1>
-            <div style={{ 
-              backgroundColor: 'white', 
-              padding: '30px', 
-              borderRadius: '12px', 
-              boxShadow: '0 2px 10px rgba(0,0,0,0.1)' 
+            <div style={{
+              backgroundColor: 'white',
+              padding: '30px',
+              borderRadius: '12px',
+              boxShadow: '0 2px 10px rgba(0,0,0,0.1)'
             }}>
               <p style={{ color: '#7f8c8d', fontSize: '16px' }}>
                 System settings and configuration options will be available here.

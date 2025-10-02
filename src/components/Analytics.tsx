@@ -33,16 +33,16 @@ const Analytics: React.FC = () => {
 
                 // Generate user growth data
                 const userGrowth = generateUserGrowthData(users);
-                
+
                 // Generate call metrics
                 const callMetrics = generateCallMetrics(calls);
-                
+
                 // Generate revenue data
                 const revenueData = generateRevenueData(subscriptions);
-                
+
                 // Generate user retention data
                 const userRetention = generateRetentionData(users);
-                
+
                 // Generate plan distribution
                 const planDistribution = generatePlanDistribution(subscriptions);
 
@@ -108,7 +108,7 @@ const Analytics: React.FC = () => {
         const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
         const currentMonth = new Date().getMonth();
         const growthData: Array<{ month: string; newUsers: number; totalUsers: number }> = [];
-        
+
         for (let i = 5; i >= 0; i--) {
             const monthIndex = (currentMonth - i + 12) % 12;
             const monthName = months[monthIndex];
@@ -116,36 +116,36 @@ const Analytics: React.FC = () => {
                 const userDate = new Date(u.createdAt);
                 return userDate.getMonth() === monthIndex;
             }).length;
-            
+
             growthData.push({
                 month: monthName,
                 newUsers: usersInMonth || Math.floor(Math.random() * 100) + 50,
                 totalUsers: growthData.length > 0 ? growthData[growthData.length - 1].totalUsers + (usersInMonth || Math.floor(Math.random() * 100) + 50) : (usersInMonth || Math.floor(Math.random() * 100) + 50)
             });
         }
-        
+
         return growthData;
     };
 
     const generateCallMetrics = (calls: any[]) => {
         const days = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
         const metricsData = [];
-        
+
         for (let i = 6; i >= 0; i--) {
             const date = new Date();
             date.setDate(date.getDate() - i);
             const dayName = days[date.getDay()];
-            
+
             const callsOnDay = calls.filter(c => {
                 const callDate = new Date(c.startedAt);
                 return callDate.toDateString() === date.toDateString();
             }).length;
-            
+
             const successful = calls.filter(c => {
                 const callDate = new Date(c.startedAt);
                 return callDate.toDateString() === date.toDateString() && c.status === 'completed';
             }).length;
-            
+
             metricsData.push({
                 day: dayName,
                 calls: callsOnDay || Math.floor(Math.random() * 100) + 50,
@@ -153,20 +153,20 @@ const Analytics: React.FC = () => {
                 failed: (callsOnDay || Math.floor(Math.random() * 100) + 50) - (successful || Math.floor((callsOnDay || Math.floor(Math.random() * 100) + 50) * 0.85)),
             });
         }
-        
+
         return metricsData;
     };
 
     const generateRevenueData = (subscriptions: any[]) => {
         const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'];
         const revenueData: Array<{ month: string; revenue: number; subscriptions: number }> = [];
-        
+
         months.forEach(month => {
             const revenue = Math.floor(Math.random() * 10000) + 5000;
             const subscriptionCount = Math.floor(Math.random() * 50) + 25;
             revenueData.push({ month, revenue, subscriptions: subscriptionCount });
         });
-        
+
         return revenueData;
     };
 
@@ -190,11 +190,11 @@ const Analytics: React.FC = () => {
 
     if (loading) {
         return (
-            <div style={{ 
-                padding: '20px', 
-                display: 'flex', 
-                justifyContent: 'center', 
-                alignItems: 'center', 
+            <div style={{
+                padding: '20px',
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center',
                 height: '50vh',
                 fontSize: '18px'
             }}>
@@ -212,8 +212,8 @@ const Analytics: React.FC = () => {
                         <p style={{ color: '#7f8c8d', fontSize: '16px' }}>Deep dive into user behavior and business metrics</p>
                     </div>
                     <div>
-                        <select 
-                            value={timeRange} 
+                        <select
+                            value={timeRange}
                             onChange={(e) => setTimeRange(e.target.value)}
                             style={{
                                 padding: '10px 15px',
@@ -233,16 +233,16 @@ const Analytics: React.FC = () => {
             </div>
 
             {/* Key Metrics */}
-            <div style={{ 
-                display: 'grid', 
-                gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', 
-                gap: '20px', 
-                marginBottom: '40px' 
+            <div style={{
+                display: 'grid',
+                gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))',
+                gap: '20px',
+                marginBottom: '40px'
             }}>
-                <div style={{ 
-                    padding: '25px', 
+                <div style={{
+                    padding: '25px',
                     backgroundColor: 'white',
-                    borderRadius: '12px', 
+                    borderRadius: '12px',
                     boxShadow: '0 2px 10px rgba(0,0,0,0.1)',
                     borderLeft: '4px solid #3498db'
                 }}>
@@ -255,10 +255,10 @@ const Analytics: React.FC = () => {
                     </p>
                 </div>
 
-                <div style={{ 
-                    padding: '25px', 
+                <div style={{
+                    padding: '25px',
                     backgroundColor: 'white',
-                    borderRadius: '12px', 
+                    borderRadius: '12px',
                     boxShadow: '0 2px 10px rgba(0,0,0,0.1)',
                     borderLeft: '4px solid #27ae60'
                 }}>
@@ -271,10 +271,10 @@ const Analytics: React.FC = () => {
                     </p>
                 </div>
 
-                <div style={{ 
-                    padding: '25px', 
+                <div style={{
+                    padding: '25px',
                     backgroundColor: 'white',
-                    borderRadius: '12px', 
+                    borderRadius: '12px',
                     boxShadow: '0 2px 10px rgba(0,0,0,0.1)',
                     borderLeft: '4px solid #e74c3c'
                 }}>
@@ -287,10 +287,10 @@ const Analytics: React.FC = () => {
                     </p>
                 </div>
 
-                <div style={{ 
-                    padding: '25px', 
+                <div style={{
+                    padding: '25px',
                     backgroundColor: 'white',
-                    borderRadius: '12px', 
+                    borderRadius: '12px',
                     boxShadow: '0 2px 10px rgba(0,0,0,0.1)',
                     borderLeft: '4px solid #f39c12'
                 }}>
@@ -305,18 +305,18 @@ const Analytics: React.FC = () => {
             </div>
 
             {/* Charts Grid */}
-            <div style={{ 
-                display: 'grid', 
-                gridTemplateColumns: 'repeat(auto-fit, minmax(500px, 1fr))', 
-                gap: '30px', 
-                marginBottom: '40px' 
+            <div style={{
+                display: 'grid',
+                gridTemplateColumns: 'repeat(auto-fit, minmax(500px, 1fr))',
+                gap: '30px',
+                marginBottom: '40px'
             }}>
                 {/* User Growth */}
-                <div style={{ 
-                    backgroundColor: 'white', 
-                    padding: '25px', 
-                    borderRadius: '12px', 
-                    boxShadow: '0 2px 10px rgba(0,0,0,0.1)' 
+                <div style={{
+                    backgroundColor: 'white',
+                    padding: '25px',
+                    borderRadius: '12px',
+                    boxShadow: '0 2px 10px rgba(0,0,0,0.1)'
                 }}>
                     <h2 style={{ marginBottom: '20px', color: '#2c3e50' }}>User Growth</h2>
                     <ResponsiveContainer width="100%" height={300}>
@@ -324,29 +324,29 @@ const Analytics: React.FC = () => {
                             <CartesianGrid strokeDasharray="3 3" stroke="#ecf0f1" />
                             <XAxis dataKey="month" stroke="#7f8c8d" />
                             <YAxis stroke="#7f8c8d" />
-                            <Tooltip 
-                                contentStyle={{ 
-                                    backgroundColor: '#2c3e50', 
-                                    border: 'none', 
+                            <Tooltip
+                                contentStyle={{
+                                    backgroundColor: '#2c3e50',
+                                    border: 'none',
                                     borderRadius: '8px',
                                     color: 'white'
-                                }} 
+                                }}
                             />
                             <Legend />
-                            <Area 
-                                type="monotone" 
-                                dataKey="totalUsers" 
+                            <Area
+                                type="monotone"
+                                dataKey="totalUsers"
                                 stackId="1"
-                                stroke="#3498db" 
-                                fill="#3498db" 
+                                stroke="#3498db"
+                                fill="#3498db"
                                 fillOpacity={0.6}
                             />
-                            <Area 
-                                type="monotone" 
-                                dataKey="newUsers" 
+                            <Area
+                                type="monotone"
+                                dataKey="newUsers"
                                 stackId="2"
-                                stroke="#27ae60" 
-                                fill="#27ae60" 
+                                stroke="#27ae60"
+                                fill="#27ae60"
                                 fillOpacity={0.6}
                             />
                         </AreaChart>
@@ -354,11 +354,11 @@ const Analytics: React.FC = () => {
                 </div>
 
                 {/* Call Performance */}
-                <div style={{ 
-                    backgroundColor: 'white', 
-                    padding: '25px', 
-                    borderRadius: '12px', 
-                    boxShadow: '0 2px 10px rgba(0,0,0,0.1)' 
+                <div style={{
+                    backgroundColor: 'white',
+                    padding: '25px',
+                    borderRadius: '12px',
+                    boxShadow: '0 2px 10px rgba(0,0,0,0.1)'
                 }}>
                     <h2 style={{ marginBottom: '20px', color: '#2c3e50' }}>Call Performance</h2>
                     <ResponsiveContainer width="100%" height={300}>
@@ -366,13 +366,13 @@ const Analytics: React.FC = () => {
                             <CartesianGrid strokeDasharray="3 3" stroke="#ecf0f1" />
                             <XAxis dataKey="day" stroke="#7f8c8d" />
                             <YAxis stroke="#7f8c8d" />
-                            <Tooltip 
-                                contentStyle={{ 
-                                    backgroundColor: '#2c3e50', 
-                                    border: 'none', 
+                            <Tooltip
+                                contentStyle={{
+                                    backgroundColor: '#2c3e50',
+                                    border: 'none',
                                     borderRadius: '8px',
                                     color: 'white'
-                                }} 
+                                }}
                             />
                             <Legend />
                             <Bar dataKey="successful" fill="#27ae60" name="Successful" />
@@ -382,11 +382,11 @@ const Analytics: React.FC = () => {
                 </div>
 
                 {/* Revenue Growth */}
-                <div style={{ 
-                    backgroundColor: 'white', 
-                    padding: '25px', 
-                    borderRadius: '12px', 
-                    boxShadow: '0 2px 10px rgba(0,0,0,0.1)' 
+                <div style={{
+                    backgroundColor: 'white',
+                    padding: '25px',
+                    borderRadius: '12px',
+                    boxShadow: '0 2px 10px rgba(0,0,0,0.1)'
                 }}>
                     <h2 style={{ marginBottom: '20px', color: '#2c3e50' }}>Revenue Growth</h2>
                     <ResponsiveContainer width="100%" height={300}>
@@ -394,10 +394,10 @@ const Analytics: React.FC = () => {
                             <CartesianGrid strokeDasharray="3 3" stroke="#ecf0f1" />
                             <XAxis dataKey="month" stroke="#7f8c8d" />
                             <YAxis stroke="#7f8c8d" />
-                            <Tooltip 
-                                contentStyle={{ 
-                                    backgroundColor: '#2c3e50', 
-                                    border: 'none', 
+                            <Tooltip
+                                contentStyle={{
+                                    backgroundColor: '#2c3e50',
+                                    border: 'none',
                                     borderRadius: '8px',
                                     color: 'white'
                                 }}
@@ -407,10 +407,10 @@ const Analytics: React.FC = () => {
                                 ]}
                             />
                             <Legend />
-                            <Line 
-                                type="monotone" 
-                                dataKey="revenue" 
-                                stroke="#f39c12" 
+                            <Line
+                                type="monotone"
+                                dataKey="revenue"
+                                stroke="#f39c12"
                                 strokeWidth={3}
                                 dot={{ fill: '#f39c12', strokeWidth: 2, r: 4 }}
                             />
@@ -419,11 +419,11 @@ const Analytics: React.FC = () => {
                 </div>
 
                 {/* User Retention */}
-                <div style={{ 
-                    backgroundColor: 'white', 
-                    padding: '25px', 
-                    borderRadius: '12px', 
-                    boxShadow: '0 2px 10px rgba(0,0,0,0.1)' 
+                <div style={{
+                    backgroundColor: 'white',
+                    padding: '25px',
+                    borderRadius: '12px',
+                    boxShadow: '0 2px 10px rgba(0,0,0,0.1)'
                 }}>
                     <h2 style={{ marginBottom: '20px', color: '#2c3e50' }}>User Retention</h2>
                     <ResponsiveContainer width="100%" height={300}>
@@ -431,20 +431,20 @@ const Analytics: React.FC = () => {
                             <CartesianGrid strokeDasharray="3 3" stroke="#ecf0f1" />
                             <XAxis dataKey="period" stroke="#7f8c8d" />
                             <YAxis stroke="#7f8c8d" />
-                            <Tooltip 
-                                contentStyle={{ 
-                                    backgroundColor: '#2c3e50', 
-                                    border: 'none', 
+                            <Tooltip
+                                contentStyle={{
+                                    backgroundColor: '#2c3e50',
+                                    border: 'none',
                                     borderRadius: '8px',
                                     color: 'white'
                                 }}
                                 formatter={(value) => [`${value}%`, 'Retention']}
                             />
                             <Legend />
-                            <Line 
-                                type="monotone" 
-                                dataKey="retention" 
-                                stroke="#9b59b6" 
+                            <Line
+                                type="monotone"
+                                dataKey="retention"
+                                stroke="#9b59b6"
                                 strokeWidth={3}
                                 dot={{ fill: '#9b59b6', strokeWidth: 2, r: 4 }}
                             />
@@ -453,11 +453,11 @@ const Analytics: React.FC = () => {
                 </div>
 
                 {/* Plan Distribution */}
-                <div style={{ 
-                    backgroundColor: 'white', 
-                    padding: '25px', 
-                    borderRadius: '12px', 
-                    boxShadow: '0 2px 10px rgba(0,0,0,0.1)' 
+                <div style={{
+                    backgroundColor: 'white',
+                    padding: '25px',
+                    borderRadius: '12px',
+                    boxShadow: '0 2px 10px rgba(0,0,0,0.1)'
                 }}>
                     <h2 style={{ marginBottom: '20px', color: '#2c3e50' }}>Plan Distribution</h2>
                     <ResponsiveContainer width="100%" height={300}>
@@ -476,13 +476,13 @@ const Analytics: React.FC = () => {
                                     <Cell key={`cell-${index}`} fill={entry.color} />
                                 ))}
                             </Pie>
-                            <Tooltip 
-                                contentStyle={{ 
-                                    backgroundColor: '#2c3e50', 
-                                    border: 'none', 
+                            <Tooltip
+                                contentStyle={{
+                                    backgroundColor: '#2c3e50',
+                                    border: 'none',
                                     borderRadius: '8px',
                                     color: 'white'
-                                }} 
+                                }}
                             />
                         </PieChart>
                     </ResponsiveContainer>
