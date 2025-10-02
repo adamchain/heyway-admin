@@ -44,7 +44,7 @@ const CustomerService: React.FC = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const [feedbacks, users, calls] = await Promise.all([
+                const [feedbacks] = await Promise.all([
                     getFeedbacks(),
                     getUsers(),
                     getCalls()

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 interface NavigationProps {
     activeTab: string;
@@ -62,10 +62,7 @@ const Navigation: React.FC<NavigationProps> = ({ activeTab, onTabChange, onLogou
                                 display: 'flex',
                                 alignItems: 'center',
                                 gap: '8px',
-                                transition: 'all 0.2s ease',
-                                ':hover': {
-                                    backgroundColor: activeTab === tab.id ? '#2980b9' : '#34495e'
-                                }
+                                transition: 'all 0.2s ease'
                             }}
                             onMouseEnter={(e) => {
                                 if (activeTab !== tab.id) {

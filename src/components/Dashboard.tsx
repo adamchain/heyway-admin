@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, BarChart, Bar, PieChart, Pie, Cell, AreaChart, Area, ComposedChart } from 'recharts';
+import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, BarChart, Bar, PieChart, Pie, Cell, ComposedChart } from 'recharts';
 import { getCalls, getSubscriptions, getUsers, getAutomations, getFeedbacks } from '../services/database';
 import type { Call } from '../data/calls';
 import type { Subscription } from '../data/subscriptions';
@@ -20,8 +20,8 @@ const Dashboard: React.FC = () => {
     const [calls, setCalls] = useState<Call[]>([]);
     const [subscriptions, setSubscriptions] = useState<Subscription[]>([]);
     const [users, setUsers] = useState<any[]>([]);
-    const [automations, setAutomations] = useState<any[]>([]);
-    const [feedbacks, setFeedbacks] = useState<any[]>([]);
+    const [automations] = useState<any[]>([]);
+    const [feedbacks] = useState<any[]>([]);
     const [loading, setLoading] = useState(true);
     const [metrics, setMetrics] = useState<DashboardMetrics>({
         totalUsers: 0,
@@ -382,7 +382,7 @@ const Dashboard: React.FC = () => {
                                 cx="50%"
                                 cy="50%"
                                 labelLine={false}
-                                label={({ name, percent }: { name: string; percent: number }) => `${name} ${(percent * 100).toFixed(0)}%`}
+                                label={(props: any) => `${props.name} ${(props.percent * 100).toFixed(0)}%`}
                                 outerRadius={80}
                                 fill="#8884d8"
                                 dataKey="value"

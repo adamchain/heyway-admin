@@ -24,7 +24,7 @@ const Analytics: React.FC = () => {
     useEffect(() => {
         const fetchAnalytics = async () => {
             try {
-                const [calls, subscriptions, users, automations] = await Promise.all([
+                const [calls, subscriptions, users] = await Promise.all([
                     getCalls(),
                     getSubscriptions(),
                     getUsers(),
@@ -107,7 +107,7 @@ const Analytics: React.FC = () => {
     const generateUserGrowthData = (users: any[]) => {
         const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
         const currentMonth = new Date().getMonth();
-        const growthData = [];
+        const growthData: Array<{ month: string; newUsers: number; totalUsers: number }> = [];
         
         for (let i = 5; i >= 0; i--) {
             const monthIndex = (currentMonth - i + 12) % 12;
@@ -159,12 +159,12 @@ const Analytics: React.FC = () => {
 
     const generateRevenueData = (subscriptions: any[]) => {
         const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'];
-        const revenueData = [];
+        const revenueData: Array<{ month: string; revenue: number; subscriptions: number }> = [];
         
         months.forEach(month => {
             const revenue = Math.floor(Math.random() * 10000) + 5000;
-            const subscriptions = Math.floor(Math.random() * 50) + 25;
-            revenueData.push({ month, revenue, subscriptions });
+            const subscriptionCount = Math.floor(Math.random() * 50) + 25;
+            revenueData.push({ month, revenue, subscriptions: subscriptionCount });
         });
         
         return revenueData;
@@ -467,7 +467,7 @@ const Analytics: React.FC = () => {
                                 cx="50%"
                                 cy="50%"
                                 labelLine={false}
-                                label={({ plan, percent }) => `${plan} ${(percent * 100).toFixed(0)}%`}
+                                label={(props: any) => `${props.plan} ${(props.percent * 100).toFixed(0)}%`}
                                 outerRadius={80}
                                 fill="#8884d8"
                                 dataKey="count"

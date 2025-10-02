@@ -19,7 +19,7 @@ export default defineConfig({
     // Optimize bundle size
     minify: 'terser',
     terserOptions: {
-      compress: {
+      mangle: {
         drop_console: true, // Remove console.log in production
         drop_debugger: true
       }
