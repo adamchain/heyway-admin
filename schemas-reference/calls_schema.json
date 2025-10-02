@@ -1,0 +1,43 @@
+{
+    "_id": {
+        "$oid": "68add03d260379b1fd9a27c2"
+    },
+    "userId": {
+        "$oid": "68adcc5c260379b1fd9a2614"
+    },
+    "sessionId": "c6b4fa6e-c052-40c0-8062-968c74030016",
+    "status": "initiated",
+    "callMode": "ai-only",
+    "participants": [
+        {
+            "phoneNumber": "4845712062",
+            "name": null,
+            "status": "pending",
+            "_id": {
+                "$oid": "68add03d260379b1fd9a27c3"
+            },
+            "transcription": []
+        }
+    ],
+    "transcription": [],
+    "aiConfig": {
+        "notes": "I wanted to give you a call.",
+        "voiceId": "TxGEqnHWrfWFTfGW9XjX",
+        "responseSpeed": 1,
+        "model": "gpt-4"
+    },
+    "startedAt": {
+        "$date": "2025-08-26T15:18:21.927Z"
+    },
+    "isInbound": false,
+    "inboundData": {
+        "urgency": "medium"
+    },
+    "createdAt": {
+        "$date": "2025-08-26T15:18:21.931Z"
+    },
+    "updatedAt": {
+        "$date": "2025-08-26T15:18:21.931Z"
+    },
+    "__v": 0
+}

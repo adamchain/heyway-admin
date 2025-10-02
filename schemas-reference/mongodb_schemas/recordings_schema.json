@@ -1,0 +1,19 @@
+{
+    "_id": {
+        "$oid": "68caf17e1c436119286533b5"
+    },
+    "name": "test 1",
+    "filePath": "gs://heyway-voice-recordings/recording-1758130558380.mp3",
+    "duration": 6,
+    "userId": {
+        "$oid": "68c9831a6b4e60be2c8a097a"
+    },
+    "signedUrl": null,
+    "createdAt": {
+        "$date": "2025-09-17T17:35:58.691Z"
+    },
+    "deletedAt": {
+        "$date": "2025-09-24T16:14:40.361Z"
+    },
+    "status": "deleted"
+}

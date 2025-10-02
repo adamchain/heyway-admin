@@ -1,0 +1,55 @@
+{
+    "_id": {
+        "$oid": "68c8175fe6b4d17db17cd94b"
+    },
+    "userId": {
+        "$oid": "68adcc5c260379b1fd9a2614"
+    },
+    "name": "Test audio",
+    "description": "",
+    "triggerType": "on_date",
+    "offsetDays": 0,
+    "offsetDirection": "after",
+    "onDate": "2025-09-15",
+    "onTime": "10:00",
+    "aiInstructions": "ask how the car loaner is going",
+    "callbackEnabled": true,
+    "callbackDelay": "15min",
+    "callbackCustomDay": "today",
+    "isActive": true,
+    "contactsCount": 1,
+    "completedCount": 0,
+    "pendingCount": 1,
+    "executionHistory": [
+        {
+            "executedAt": {
+                "$date": "2025-09-15T13:42:18.08Z"
+            },
+            "contactsProcessed": 1,
+            "successCount": 1,
+            "errorCount": 0,
+            "errors": [],
+            "_id": {
+                "$oid": "68c817bacd9f9f73fad2505b"
+            }
+        }
+    ],
+    "createdAt": {
+        "$date": "2025-09-15T13:40:47.384Z"
+    },
+    "updatedAt": {
+        "$date": "2025-09-18T00:10:38.872Z"
+    },
+    "nextRun": {
+        "$date": "2025-09-15T14:00:00Z"
+    },
+    "__v": 1,
+    "lastRun": {
+        "$date": "2025-09-15T13:42:18.137Z"
+    },
+    "daysOffset": 7,
+    "fixedDate": null,
+    "timeOfDay": "09:00",
+    "timezone": "America/New_York",
+    "timingMode": "after"
+}

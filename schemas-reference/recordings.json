@@ -1,0 +1,613 @@
+{
+  "isEmpty": false,
+  "sampleCount": 16,
+  "totalDocuments": 16,
+  "schema": {
+    "_id": {
+      "types": [
+        "object"
+      ],
+      "count": 16,
+      "examples": [
+        "[object]"
+      ],
+      "isArray": false,
+      "isNested": true,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "_id.buffer": {
+      "types": [
+        "object"
+      ],
+      "count": 16,
+      "examples": [
+        "[object]"
+      ],
+      "isArray": false,
+      "isNested": true,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "_id.buffer.0": {
+      "types": [
+        "number"
+      ],
+      "count": 16,
+      "examples": [
+        "104"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "_id.buffer.1": {
+      "types": [
+        "number"
+      ],
+      "count": 16,
+      "examples": [
+        "202",
+        "203",
+        "204"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "_id.buffer.2": {
+      "types": [
+        "number"
+      ],
+      "count": 16,
+      "examples": [
+        "241",
+        "43",
+        "66"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "_id.buffer.3": {
+      "types": [
+        "number"
+      ],
+      "count": 16,
+      "examples": [
+        "126",
+        "248",
+        "78"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "_id.buffer.4": {
+      "types": [
+        "number"
+      ],
+      "count": 16,
+      "examples": [
+        "28",
+        "98",
+        "82"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "_id.buffer.5": {
+      "types": [
+        "number"
+      ],
+      "count": 16,
+      "examples": [
+        "67",
+        "121",
+        "168"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "_id.buffer.6": {
+      "types": [
+        "number"
+      ],
+      "count": 16,
+      "examples": [
+        "97",
+        "192",
+        "155"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "_id.buffer.7": {
+      "types": [
+        "number"
+      ],
+      "count": 16,
+      "examples": [
+        "25",
+        "180",
+        "74"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "_id.buffer.8": {
+      "types": [
+        "number"
+      ],
+      "count": 16,
+      "examples": [
+        "40",
+        "247",
+        "186"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "_id.buffer.9": {
+      "types": [
+        "number"
+      ],
+      "count": 16,
+      "examples": [
+        "101",
+        "123",
+        "121"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "_id.buffer.10": {
+      "types": [
+        "number"
+      ],
+      "count": 16,
+      "examples": [
+        "51",
+        "64",
+        "81"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "_id.buffer.11": {
+      "types": [
+        "number"
+      ],
+      "count": 16,
+      "examples": [
+        "181",
+        "87",
+        "169"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "name": {
+      "types": [
+        "string"
+      ],
+      "count": 16,
+      "examples": [
+        "test 1",
+        "recording 9_17_2025_ 5_45_10 pm",
+        "recording 9_17_2025_ 7_20_43 pm"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "filePath": {
+      "types": [
+        "string"
+      ],
+      "count": 16,
+      "examples": [
+        "gs://heyway-voice-recordings/recording-1758130558380.mp3",
+        "gs://heyway-voice-recordings/recording-1758145528518.mp3",
+        "gs://heyway-voice-recordings/recording-1758151246024.mp3"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "duration": {
+      "types": [
+        "number"
+      ],
+      "count": 16,
+      "examples": [
+        "6",
+        "17",
+        "2"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "userId": {
+      "types": [
+        "object"
+      ],
+      "count": 16,
+      "examples": [
+        "[object]"
+      ],
+      "isArray": false,
+      "isNested": true,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "userId.buffer": {
+      "types": [
+        "object"
+      ],
+      "count": 16,
+      "examples": [
+        "[object]"
+      ],
+      "isArray": false,
+      "isNested": true,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "userId.buffer.0": {
+      "types": [
+        "number"
+      ],
+      "count": 16,
+      "examples": [
+        "104"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "userId.buffer.1": {
+      "types": [
+        "number"
+      ],
+      "count": 16,
+      "examples": [
+        "201",
+        "202",
+        "204"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "userId.buffer.2": {
+      "types": [
+        "number"
+      ],
+      "count": 16,
+      "examples": [
+        "131",
+        "253",
+        "39"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "userId.buffer.3": {
+      "types": [
+        "number"
+      ],
+      "count": 16,
+      "examples": [
+        "26",
+        "21",
+        "131"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "userId.buffer.4": {
+      "types": [
+        "number"
+      ],
+      "count": 16,
+      "examples": [
+        "107",
+        "89",
+        "40"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "userId.buffer.5": {
+      "types": [
+        "number"
+      ],
+      "count": 16,
+      "examples": [
+        "78",
+        "147",
+        "244"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "userId.buffer.6": {
+      "types": [
+        "number"
+      ],
+      "count": 16,
+      "examples": [
+        "96",
+        "240",
+        "109"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "userId.buffer.7": {
+      "types": [
+        "number"
+      ],
+      "count": 16,
+      "examples": [
+        "190",
+        "157",
+        "209"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "userId.buffer.8": {
+      "types": [
+        "number"
+      ],
+      "count": 16,
+      "examples": [
+        "44",
+        "148",
+        "107"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "userId.buffer.9": {
+      "types": [
+        "number"
+      ],
+      "count": 16,
+      "examples": [
+        "138",
+        "187",
+        "223"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "userId.buffer.10": {
+      "types": [
+        "number"
+      ],
+      "count": 16,
+      "examples": [
+        "9",
+        "58",
+        "134"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "userId.buffer.11": {
+      "types": [
+        "number"
+      ],
+      "count": 16,
+      "examples": [
+        "122",
+        "172",
+        "116"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "signedUrl": {
+      "types": [
+        "null"
+      ],
+      "count": 7,
+      "examples": [],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "43.8%",
+      "required": false
+    },
+    "createdAt": {
+      "types": [
+        "object"
+      ],
+      "count": 16,
+      "examples": [
+        "[object]"
+      ],
+      "isArray": false,
+      "isNested": true,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "isAIVoice": {
+      "types": [
+        "boolean"
+      ],
+      "count": 9,
+      "examples": [
+        "true"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "56.3%",
+      "required": false
+    },
+    "originalText": {
+      "types": [
+        "string"
+      ],
+      "count": 9,
+      "examples": [
+        "test",
+        "hey its randy",
+        "ask for his eta"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "56.3%",
+      "required": false
+    },
+    "professionalPrompt": {
+      "types": [
+        "string"
+      ],
+      "count": 1,
+      "examples": [
+        "You are a professional AI assistant for a business calling system. Your role is to respond professionally and helpfully to callers after they hear a recorded message.\n\nCONTEXT: automation\nORIGINAL MESSAGE: \"test\"\n\nINSTRUCTIONS:\n- Always respond professionally and courteously\n- Be helpful and informative\n- Keep responses concise but complete\n- Use a warm but professional tone\n- If you don't have specific information, offer to connect them with the right person\n- Always end with a clear next step or call to action\n- Maintain a business-appropriate demeanor at all times\n\nRESPONSE GUIDELINES:\n- Greet the caller professionally\n- Acknowledge their interest or concern\n- Provide helpful information or next steps\n- Offer to connect them with the appropriate team member if needed\n- End with a clear call to action\n\nRemember: You represent a professional business, so maintain high standards of communication and helpfulness."
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "6.3%",
+      "required": false
+    },
+    "voiceSettings": {
+      "types": [
+        "object",
+        "null"
+      ],
+      "count": 9,
+      "examples": [
+        "[object]"
+      ],
+      "isArray": false,
+      "isNested": true,
+      "frequency": "56.3%",
+      "required": false
+    },
+    "voiceSettings.voiceId": {
+      "types": [
+        "string"
+      ],
+      "count": 1,
+      "examples": [
+        "RexqLjNzkCjWogguKyff"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "6.3%",
+      "required": false
+    },
+    "voiceSettings.stability": {
+      "types": [
+        "number"
+      ],
+      "count": 1,
+      "examples": [
+        "0.75"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "6.3%",
+      "required": false
+    },
+    "voiceSettings.similarityBoost": {
+      "types": [
+        "number"
+      ],
+      "count": 1,
+      "examples": [
+        "0.75"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "6.3%",
+      "required": false
+    },
+    "voiceSettings.style": {
+      "types": [
+        "number"
+      ],
+      "count": 1,
+      "examples": [
+        "0"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "6.3%",
+      "required": false
+    },
+    "voiceSettings.useSpeakerBoost": {
+      "types": [
+        "boolean"
+      ],
+      "count": 1,
+      "examples": [
+        "true"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "6.3%",
+      "required": false
+    }
+  },
+  "indexes": [
+    {
+      "v": 2,
+      "key": {
+        "_id": 1
+      },
+      "name": "_id_"
+    }
+  ]
+}

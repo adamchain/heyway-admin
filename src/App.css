@@ -1,0 +1,28 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.App {
+  text-align: left;
+}
+
+h1,
+h2 {
+  color: #333;
+}
+
+table {
+  font-family: Arial, sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}

@@ -1,0 +1,720 @@
+{
+  "isEmpty": false,
+  "sampleCount": 5,
+  "totalDocuments": 5,
+  "schema": {
+    "_id": {
+      "types": [
+        "object"
+      ],
+      "count": 5,
+      "examples": [
+        "[object]"
+      ],
+      "isArray": false,
+      "isNested": true,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "_id.buffer": {
+      "types": [
+        "object"
+      ],
+      "count": 5,
+      "examples": [
+        "[object]"
+      ],
+      "isArray": false,
+      "isNested": true,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "_id.buffer.0": {
+      "types": [
+        "number"
+      ],
+      "count": 5,
+      "examples": [
+        "104"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "_id.buffer.1": {
+      "types": [
+        "number"
+      ],
+      "count": 5,
+      "examples": [
+        "184",
+        "185",
+        "186"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "_id.buffer.2": {
+      "types": [
+        "number"
+      ],
+      "count": 5,
+      "examples": [
+        "190",
+        "69",
+        "0"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "_id.buffer.3": {
+      "types": [
+        "number"
+      ],
+      "count": 5,
+      "examples": [
+        "158",
+        "17",
+        "44"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "_id.buffer.4": {
+      "types": [
+        "number"
+      ],
+      "count": 5,
+      "examples": [
+        "53",
+        "150",
+        "84"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "_id.buffer.5": {
+      "types": [
+        "number"
+      ],
+      "count": 5,
+      "examples": [
+        "44",
+        "167",
+        "46"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "_id.buffer.6": {
+      "types": [
+        "number"
+      ],
+      "count": 5,
+      "examples": [
+        "96",
+        "75",
+        "231"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "_id.buffer.7": {
+      "types": [
+        "number"
+      ],
+      "count": 5,
+      "examples": [
+        "213",
+        "41",
+        "180"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "_id.buffer.8": {
+      "types": [
+        "number"
+      ],
+      "count": 5,
+      "examples": [
+        "237",
+        "176",
+        "80"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "_id.buffer.9": {
+      "types": [
+        "number"
+      ],
+      "count": 5,
+      "examples": [
+        "161",
+        "249",
+        "145"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "_id.buffer.10": {
+      "types": [
+        "number"
+      ],
+      "count": 5,
+      "examples": [
+        "48",
+        "248",
+        "197"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "_id.buffer.11": {
+      "types": [
+        "number"
+      ],
+      "count": 5,
+      "examples": [
+        "55",
+        "101",
+        "106"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "userId": {
+      "types": [
+        "object"
+      ],
+      "count": 5,
+      "examples": [
+        "[object]"
+      ],
+      "isArray": false,
+      "isNested": true,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "userId.buffer": {
+      "types": [
+        "object"
+      ],
+      "count": 5,
+      "examples": [
+        "[object]"
+      ],
+      "isArray": false,
+      "isNested": true,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "userId.buffer.0": {
+      "types": [
+        "number"
+      ],
+      "count": 5,
+      "examples": [
+        "104"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "userId.buffer.1": {
+      "types": [
+        "number"
+      ],
+      "count": 5,
+      "examples": [
+        "173"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "userId.buffer.2": {
+      "types": [
+        "number"
+      ],
+      "count": 5,
+      "examples": [
+        "204"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "userId.buffer.3": {
+      "types": [
+        "number"
+      ],
+      "count": 5,
+      "examples": [
+        "92"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "userId.buffer.4": {
+      "types": [
+        "number"
+      ],
+      "count": 5,
+      "examples": [
+        "38"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "userId.buffer.5": {
+      "types": [
+        "number"
+      ],
+      "count": 5,
+      "examples": [
+        "3"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "userId.buffer.6": {
+      "types": [
+        "number"
+      ],
+      "count": 5,
+      "examples": [
+        "121"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "userId.buffer.7": {
+      "types": [
+        "number"
+      ],
+      "count": 5,
+      "examples": [
+        "177"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "userId.buffer.8": {
+      "types": [
+        "number"
+      ],
+      "count": 5,
+      "examples": [
+        "253"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "userId.buffer.9": {
+      "types": [
+        "number"
+      ],
+      "count": 5,
+      "examples": [
+        "154"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "userId.buffer.10": {
+      "types": [
+        "number"
+      ],
+      "count": 5,
+      "examples": [
+        "38"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "userId.buffer.11": {
+      "types": [
+        "number"
+      ],
+      "count": 5,
+      "examples": [
+        "20"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "name": {
+      "types": [
+        "string"
+      ],
+      "count": 5,
+      "examples": [
+        "test",
+        "tsan",
+        "gfggh"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "description": {
+      "types": [
+        "string"
+      ],
+      "count": 5,
+      "examples": [
+        ""
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "calls": {
+      "types": [
+        "array"
+      ],
+      "count": 5,
+      "examples": [
+        "[1 items]",
+        "[0 items]"
+      ],
+      "isArray": true,
+      "isNested": true,
+      "arrayElementType": "object",
+      "frequency": "100.0%",
+      "required": true
+    },
+    "calls[].buffer": {
+      "types": [
+        "object"
+      ],
+      "count": 1,
+      "examples": [
+        "[object]"
+      ],
+      "isArray": false,
+      "isNested": true,
+      "frequency": "20.0%",
+      "required": false
+    },
+    "calls[].buffer.0": {
+      "types": [
+        "number"
+      ],
+      "count": 1,
+      "examples": [
+        "104"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "20.0%",
+      "required": false
+    },
+    "calls[].buffer.1": {
+      "types": [
+        "number"
+      ],
+      "count": 1,
+      "examples": [
+        "184"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "20.0%",
+      "required": false
+    },
+    "calls[].buffer.2": {
+      "types": [
+        "number"
+      ],
+      "count": 1,
+      "examples": [
+        "69"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "20.0%",
+      "required": false
+    },
+    "calls[].buffer.3": {
+      "types": [
+        "number"
+      ],
+      "count": 1,
+      "examples": [
+        "109"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "20.0%",
+      "required": false
+    },
+    "calls[].buffer.4": {
+      "types": [
+        "number"
+      ],
+      "count": 1,
+      "examples": [
+        "210"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "20.0%",
+      "required": false
+    },
+    "calls[].buffer.5": {
+      "types": [
+        "number"
+      ],
+      "count": 1,
+      "examples": [
+        "131"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "20.0%",
+      "required": false
+    },
+    "calls[].buffer.6": {
+      "types": [
+        "number"
+      ],
+      "count": 1,
+      "examples": [
+        "44"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "20.0%",
+      "required": false
+    },
+    "calls[].buffer.7": {
+      "types": [
+        "number"
+      ],
+      "count": 1,
+      "examples": [
+        "252"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "20.0%",
+      "required": false
+    },
+    "calls[].buffer.8": {
+      "types": [
+        "number"
+      ],
+      "count": 1,
+      "examples": [
+        "160"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "20.0%",
+      "required": false
+    },
+    "calls[].buffer.9": {
+      "types": [
+        "number"
+      ],
+      "count": 1,
+      "examples": [
+        "38"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "20.0%",
+      "required": false
+    },
+    "calls[].buffer.10": {
+      "types": [
+        "number"
+      ],
+      "count": 1,
+      "examples": [
+        "223"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "20.0%",
+      "required": false
+    },
+    "calls[].buffer.11": {
+      "types": [
+        "number"
+      ],
+      "count": 1,
+      "examples": [
+        "57"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "20.0%",
+      "required": false
+    },
+    "color": {
+      "types": [
+        "string"
+      ],
+      "count": 5,
+      "examples": [
+        "#3b82f6"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "isActive": {
+      "types": [
+        "boolean"
+      ],
+      "count": 5,
+      "examples": [
+        "true"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "metadata": {
+      "types": [
+        "object"
+      ],
+      "count": 5,
+      "examples": [
+        "[object]"
+      ],
+      "isArray": false,
+      "isNested": true,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "metadata.callCount": {
+      "types": [
+        "number"
+      ],
+      "count": 5,
+      "examples": [
+        "1",
+        "0"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "metadata.lastUpdated": {
+      "types": [
+        "object"
+      ],
+      "count": 5,
+      "examples": [
+        "[object]"
+      ],
+      "isArray": false,
+      "isNested": true,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "createdAt": {
+      "types": [
+        "object"
+      ],
+      "count": 5,
+      "examples": [
+        "[object]"
+      ],
+      "isArray": false,
+      "isNested": true,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "updatedAt": {
+      "types": [
+        "object"
+      ],
+      "count": 5,
+      "examples": [
+        "[object]"
+      ],
+      "isArray": false,
+      "isNested": true,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "__v": {
+      "types": [
+        "number"
+      ],
+      "count": 5,
+      "examples": [
+        "1",
+        "0"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "100.0%",
+      "required": true
+    }
+  },
+  "indexes": [
+    {
+      "v": 2,
+      "key": {
+        "_id": 1
+      },
+      "name": "_id_"
+    }
+  ]
+}

@@ -1,0 +1,1468 @@
+{
+  "isEmpty": false,
+  "sampleCount": 100,
+  "totalDocuments": 1395,
+  "schema": {
+    "_id": {
+      "types": [
+        "object"
+      ],
+      "count": 100,
+      "examples": [
+        "[object]"
+      ],
+      "isArray": false,
+      "isNested": true,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "_id.buffer": {
+      "types": [
+        "object"
+      ],
+      "count": 100,
+      "examples": [
+        "[object]"
+      ],
+      "isArray": false,
+      "isNested": true,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "_id.buffer.0": {
+      "types": [
+        "number"
+      ],
+      "count": 100,
+      "examples": [
+        "104"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "_id.buffer.1": {
+      "types": [
+        "number"
+      ],
+      "count": 100,
+      "examples": [
+        "173",
+        "174",
+        "175"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "_id.buffer.2": {
+      "types": [
+        "number"
+      ],
+      "count": 100,
+      "examples": [
+        "208",
+        "246",
+        "170"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "_id.buffer.3": {
+      "types": [
+        "number"
+      ],
+      "count": 100,
+      "examples": [
+        "61",
+        "70",
+        "63"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "_id.buffer.4": {
+      "types": [
+        "number"
+      ],
+      "count": 100,
+      "examples": [
+        "38",
+        "177",
+        "36"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "_id.buffer.5": {
+      "types": [
+        "number"
+      ],
+      "count": 100,
+      "examples": [
+        "3",
+        "208",
+        "247"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "_id.buffer.6": {
+      "types": [
+        "number"
+      ],
+      "count": 100,
+      "examples": [
+        "121",
+        "92",
+        "58"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "_id.buffer.7": {
+      "types": [
+        "number"
+      ],
+      "count": 100,
+      "examples": [
+        "177",
+        "48",
+        "118"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "_id.buffer.8": {
+      "types": [
+        "number"
+      ],
+      "count": 100,
+      "examples": [
+        "253",
+        "231",
+        "18"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "_id.buffer.9": {
+      "types": [
+        "number"
+      ],
+      "count": 100,
+      "examples": [
+        "154",
+        "126",
+        "114"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "_id.buffer.10": {
+      "types": [
+        "number"
+      ],
+      "count": 100,
+      "examples": [
+        "39",
+        "204",
+        "108"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "_id.buffer.11": {
+      "types": [
+        "number"
+      ],
+      "count": 100,
+      "examples": [
+        "194",
+        "10",
+        "183"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "userId": {
+      "types": [
+        "object"
+      ],
+      "count": 100,
+      "examples": [
+        "[object]"
+      ],
+      "isArray": false,
+      "isNested": true,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "userId.buffer": {
+      "types": [
+        "object"
+      ],
+      "count": 100,
+      "examples": [
+        "[object]"
+      ],
+      "isArray": false,
+      "isNested": true,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "userId.buffer.0": {
+      "types": [
+        "number"
+      ],
+      "count": 100,
+      "examples": [
+        "104"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "userId.buffer.1": {
+      "types": [
+        "number"
+      ],
+      "count": 100,
+      "examples": [
+        "173"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "userId.buffer.2": {
+      "types": [
+        "number"
+      ],
+      "count": 100,
+      "examples": [
+        "204"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "userId.buffer.3": {
+      "types": [
+        "number"
+      ],
+      "count": 100,
+      "examples": [
+        "92"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "userId.buffer.4": {
+      "types": [
+        "number"
+      ],
+      "count": 100,
+      "examples": [
+        "38"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "userId.buffer.5": {
+      "types": [
+        "number"
+      ],
+      "count": 100,
+      "examples": [
+        "3"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "userId.buffer.6": {
+      "types": [
+        "number"
+      ],
+      "count": 100,
+      "examples": [
+        "121"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "userId.buffer.7": {
+      "types": [
+        "number"
+      ],
+      "count": 100,
+      "examples": [
+        "177"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "userId.buffer.8": {
+      "types": [
+        "number"
+      ],
+      "count": 100,
+      "examples": [
+        "253"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "userId.buffer.9": {
+      "types": [
+        "number"
+      ],
+      "count": 100,
+      "examples": [
+        "154"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "userId.buffer.10": {
+      "types": [
+        "number"
+      ],
+      "count": 100,
+      "examples": [
+        "38"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "userId.buffer.11": {
+      "types": [
+        "number"
+      ],
+      "count": 100,
+      "examples": [
+        "20"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "sessionId": {
+      "types": [
+        "string"
+      ],
+      "count": 100,
+      "examples": [
+        "c6b4fa6e-c052-40c0-8062-968c74030016",
+        "4e9bba35-ffd5-46e6-b104-ef826f045769",
+        "c7c67910-5cef-4399-a077-8f6406706df9"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "status": {
+      "types": [
+        "string"
+      ],
+      "count": 100,
+      "examples": [
+        "initiated",
+        "completed",
+        "failed"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "callMode": {
+      "types": [
+        "string"
+      ],
+      "count": 100,
+      "examples": [
+        "ai-only"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "participants": {
+      "types": [
+        "array"
+      ],
+      "count": 100,
+      "examples": [
+        "[1 items]"
+      ],
+      "isArray": true,
+      "isNested": true,
+      "arrayElementType": "object",
+      "frequency": "100.0%",
+      "required": true
+    },
+    "participants[].phoneNumber": {
+      "types": [
+        "string"
+      ],
+      "count": 100,
+      "examples": [
+        "4845712062",
+        "(216)627-8359",
+        "+1-024-377-5391"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "participants[].name": {
+      "types": [
+        "null"
+      ],
+      "count": 9,
+      "examples": [],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "9.0%",
+      "required": false
+    },
+    "participants[].status": {
+      "types": [
+        "string"
+      ],
+      "count": 100,
+      "examples": [
+        "pending"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "participants[]._id": {
+      "types": [
+        "object"
+      ],
+      "count": 100,
+      "examples": [
+        "[object]"
+      ],
+      "isArray": false,
+      "isNested": true,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "participants[]._id.buffer": {
+      "types": [
+        "object"
+      ],
+      "count": 100,
+      "examples": [
+        "[object]"
+      ],
+      "isArray": false,
+      "isNested": true,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "participants[]._id.buffer.0": {
+      "types": [
+        "number"
+      ],
+      "count": 100,
+      "examples": [
+        "104"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "participants[]._id.buffer.1": {
+      "types": [
+        "number"
+      ],
+      "count": 100,
+      "examples": [
+        "173",
+        "174",
+        "175"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "participants[]._id.buffer.2": {
+      "types": [
+        "number"
+      ],
+      "count": 100,
+      "examples": [
+        "208",
+        "246",
+        "170"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "participants[]._id.buffer.3": {
+      "types": [
+        "number"
+      ],
+      "count": 100,
+      "examples": [
+        "61",
+        "70",
+        "63"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "participants[]._id.buffer.4": {
+      "types": [
+        "number"
+      ],
+      "count": 100,
+      "examples": [
+        "38",
+        "177",
+        "36"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "participants[]._id.buffer.5": {
+      "types": [
+        "number"
+      ],
+      "count": 100,
+      "examples": [
+        "3",
+        "208",
+        "247"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "participants[]._id.buffer.6": {
+      "types": [
+        "number"
+      ],
+      "count": 100,
+      "examples": [
+        "121",
+        "92",
+        "58"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "participants[]._id.buffer.7": {
+      "types": [
+        "number"
+      ],
+      "count": 100,
+      "examples": [
+        "177",
+        "48",
+        "118"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "participants[]._id.buffer.8": {
+      "types": [
+        "number"
+      ],
+      "count": 100,
+      "examples": [
+        "253",
+        "231",
+        "18"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "participants[]._id.buffer.9": {
+      "types": [
+        "number"
+      ],
+      "count": 100,
+      "examples": [
+        "154",
+        "126",
+        "114"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "participants[]._id.buffer.10": {
+      "types": [
+        "number"
+      ],
+      "count": 100,
+      "examples": [
+        "39",
+        "204",
+        "108"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "participants[]._id.buffer.11": {
+      "types": [
+        "number"
+      ],
+      "count": 100,
+      "examples": [
+        "195",
+        "11",
+        "184"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "participants[].transcription": {
+      "types": [
+        "array"
+      ],
+      "count": 100,
+      "examples": [
+        "[0 items]"
+      ],
+      "isArray": true,
+      "isNested": false,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "transcription": {
+      "types": [
+        "array"
+      ],
+      "count": 100,
+      "examples": [
+        "[0 items]",
+        "[3 items]",
+        "[1 items]"
+      ],
+      "isArray": true,
+      "isNested": true,
+      "arrayElementType": "object",
+      "frequency": "100.0%",
+      "required": true
+    },
+    "aiConfig": {
+      "types": [
+        "object"
+      ],
+      "count": 100,
+      "examples": [
+        "[object]"
+      ],
+      "isArray": false,
+      "isNested": true,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "aiConfig.notes": {
+      "types": [
+        "string"
+      ],
+      "count": 100,
+      "examples": [
+        "I wanted to give you a call.",
+        "ask for eta",
+        "yoooo remus"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "aiConfig.voiceId": {
+      "types": [
+        "string"
+      ],
+      "count": 12,
+      "examples": [
+        "TxGEqnHWrfWFTfGW9XjX"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "12.0%",
+      "required": false
+    },
+    "aiConfig.responseSpeed": {
+      "types": [
+        "number"
+      ],
+      "count": 100,
+      "examples": [
+        "1"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "aiConfig.model": {
+      "types": [
+        "string"
+      ],
+      "count": 100,
+      "examples": [
+        "gpt-4"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "startedAt": {
+      "types": [
+        "object"
+      ],
+      "count": 100,
+      "examples": [
+        "[object]"
+      ],
+      "isArray": false,
+      "isNested": true,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "isInbound": {
+      "types": [
+        "boolean"
+      ],
+      "count": 100,
+      "examples": [
+        "false"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "inboundData": {
+      "types": [
+        "object"
+      ],
+      "count": 100,
+      "examples": [
+        "[object]"
+      ],
+      "isArray": false,
+      "isNested": true,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "inboundData.urgency": {
+      "types": [
+        "string"
+      ],
+      "count": 100,
+      "examples": [
+        "medium"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "createdAt": {
+      "types": [
+        "object"
+      ],
+      "count": 100,
+      "examples": [
+        "[object]"
+      ],
+      "isArray": false,
+      "isNested": true,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "updatedAt": {
+      "types": [
+        "object"
+      ],
+      "count": 100,
+      "examples": [
+        "[object]"
+      ],
+      "isArray": false,
+      "isNested": true,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "__v": {
+      "types": [
+        "number"
+      ],
+      "count": 100,
+      "examples": [
+        "0"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "transcription[].timestamp": {
+      "types": [
+        "object"
+      ],
+      "count": 21,
+      "examples": [
+        "[object]"
+      ],
+      "isArray": false,
+      "isNested": true,
+      "frequency": "21.0%",
+      "required": false
+    },
+    "transcription[].speaker": {
+      "types": [
+        "string"
+      ],
+      "count": 21,
+      "examples": [
+        "agent",
+        "user"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "21.0%",
+      "required": false
+    },
+    "transcription[].text": {
+      "types": [
+        "string"
+      ],
+      "count": 21,
+      "examples": [
+        "Hey there, it's Adam. I just wanted to give you a call.",
+        "I know, it's Adam. What's up?",
+        "Not much, just wanted to have a quick chat and see how things are going."
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "21.0%",
+      "required": false
+    },
+    "transcription[]._id": {
+      "types": [
+        "object"
+      ],
+      "count": 21,
+      "examples": [
+        "[object]"
+      ],
+      "isArray": false,
+      "isNested": true,
+      "frequency": "21.0%",
+      "required": false
+    },
+    "transcription[]._id.buffer": {
+      "types": [
+        "object"
+      ],
+      "count": 21,
+      "examples": [
+        "[object]"
+      ],
+      "isArray": false,
+      "isNested": true,
+      "frequency": "21.0%",
+      "required": false
+    },
+    "transcription[]._id.buffer.0": {
+      "types": [
+        "number"
+      ],
+      "count": 21,
+      "examples": [
+        "104"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "21.0%",
+      "required": false
+    },
+    "transcription[]._id.buffer.1": {
+      "types": [
+        "number"
+      ],
+      "count": 21,
+      "examples": [
+        "173",
+        "174",
+        "175"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "21.0%",
+      "required": false
+    },
+    "transcription[]._id.buffer.2": {
+      "types": [
+        "number"
+      ],
+      "count": 21,
+      "examples": [
+        "246",
+        "170",
+        "85"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "21.0%",
+      "required": false
+    },
+    "transcription[]._id.buffer.3": {
+      "types": [
+        "number"
+      ],
+      "count": 21,
+      "examples": [
+        "93",
+        "81",
+        "137"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "21.0%",
+      "required": false
+    },
+    "transcription[]._id.buffer.4": {
+      "types": [
+        "number"
+      ],
+      "count": 21,
+      "examples": [
+        "36",
+        "118",
+        "59"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "21.0%",
+      "required": false
+    },
+    "transcription[]._id.buffer.5": {
+      "types": [
+        "number"
+      ],
+      "count": 21,
+      "examples": [
+        "247",
+        "103",
+        "24"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "21.0%",
+      "required": false
+    },
+    "transcription[]._id.buffer.6": {
+      "types": [
+        "number"
+      ],
+      "count": 21,
+      "examples": [
+        "58",
+        "130",
+        "113"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "21.0%",
+      "required": false
+    },
+    "transcription[]._id.buffer.7": {
+      "types": [
+        "number"
+      ],
+      "count": 21,
+      "examples": [
+        "118",
+        "198",
+        "74"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "21.0%",
+      "required": false
+    },
+    "transcription[]._id.buffer.8": {
+      "types": [
+        "number"
+      ],
+      "count": 21,
+      "examples": [
+        "18",
+        "230",
+        "138"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "21.0%",
+      "required": false
+    },
+    "transcription[]._id.buffer.9": {
+      "types": [
+        "number"
+      ],
+      "count": 21,
+      "examples": [
+        "114",
+        "107",
+        "71"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "21.0%",
+      "required": false
+    },
+    "transcription[]._id.buffer.10": {
+      "types": [
+        "number"
+      ],
+      "count": 21,
+      "examples": [
+        "78",
+        "13",
+        "152"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "21.0%",
+      "required": false
+    },
+    "transcription[]._id.buffer.11": {
+      "types": [
+        "number"
+      ],
+      "count": 21,
+      "examples": [
+        "104",
+        "105",
+        "106"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "21.0%",
+      "required": false
+    },
+    "twilioCallSid": {
+      "types": [
+        "string"
+      ],
+      "count": 29,
+      "examples": [
+        "CA1e62f1323a930c7d32480048ae5fda4b",
+        "CA9bbe123036c1c4fd4f8ffdeac56529a6",
+        "CAba1f57b69bb787d9739be9350347c235"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "29.0%",
+      "required": false
+    },
+    "endedAt": {
+      "types": [
+        "object"
+      ],
+      "count": 29,
+      "examples": [
+        "[object]"
+      ],
+      "isArray": false,
+      "isNested": true,
+      "frequency": "29.0%",
+      "required": false
+    },
+    "metrics": {
+      "types": [
+        "object"
+      ],
+      "count": 29,
+      "examples": [
+        "[object]"
+      ],
+      "isArray": false,
+      "isNested": true,
+      "frequency": "29.0%",
+      "required": false
+    },
+    "metrics.totalDuration": {
+      "types": [
+        "number"
+      ],
+      "count": 29,
+      "examples": [
+        "16",
+        "12",
+        "8"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "29.0%",
+      "required": false
+    },
+    "analysis": {
+      "types": [
+        "object"
+      ],
+      "count": 94,
+      "examples": [
+        "[object]"
+      ],
+      "isArray": false,
+      "isNested": true,
+      "frequency": "94.0%",
+      "required": false
+    },
+    "analysis.analyzedAt": {
+      "types": [
+        "object"
+      ],
+      "count": 6,
+      "examples": [
+        "[object]"
+      ],
+      "isArray": false,
+      "isNested": true,
+      "frequency": "6.0%",
+      "required": false
+    },
+    "analysis.category": {
+      "types": [
+        "string"
+      ],
+      "count": 6,
+      "examples": [
+        "bad",
+        "good"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "6.0%",
+      "required": false
+    },
+    "analysis.followUpNeeded": {
+      "types": [
+        "boolean"
+      ],
+      "count": 94,
+      "examples": [
+        "false",
+        "true"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "94.0%",
+      "required": false
+    },
+    "analysis.keywords": {
+      "types": [
+        "array"
+      ],
+      "count": 94,
+      "examples": [
+        "[1 items]",
+        "[0 items]",
+        "[2 items]"
+      ],
+      "isArray": true,
+      "isNested": false,
+      "arrayElementType": "string",
+      "frequency": "94.0%",
+      "required": false
+    },
+    "analysis.reasoning": {
+      "types": [
+        "string"
+      ],
+      "count": 6,
+      "examples": [
+        "Call ended quickly with minimal engagement - likely not interested at this time",
+        "Positive conversation outcome with engaged prospect showing clear interest"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "6.0%",
+      "required": false
+    },
+    "analysis.score": {
+      "types": [
+        "number"
+      ],
+      "count": 6,
+      "examples": [
+        "0",
+        "60"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "6.0%",
+      "required": false
+    },
+    "analysis.sentiment": {
+      "types": [
+        "string"
+      ],
+      "count": 6,
+      "examples": [
+        "negative",
+        "positive"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "6.0%",
+      "required": false
+    },
+    "analysis.version": {
+      "types": [
+        "string"
+      ],
+      "count": 94,
+      "examples": [
+        "1.0"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "94.0%",
+      "required": false
+    }
+  },
+  "indexes": [
+    {
+      "v": 2,
+      "key": {
+        "_id": 1
+      },
+      "name": "_id_"
+    },
+    {
+      "v": 2,
+      "key": {
+        "automationId": 1,
+        "createdAt": -1
+      },
+      "name": "automationId_1_createdAt_-1"
+    },
+    {
+      "v": 2,
+      "key": {
+        "userId": 1,
+        "automationId": 1
+      },
+      "name": "userId_1_automationId_1"
+    },
+    {
+      "v": 2,
+      "key": {
+        "sessionId": 1
+      },
+      "name": "sessionId_1",
+      "background": true,
+      "unique": true
+    },
+    {
+      "v": 2,
+      "key": {
+        "automationId": 1
+      },
+      "name": "automationId_1",
+      "background": true
+    },
+    {
+      "v": 2,
+      "key": {
+        "analysis.category": 1
+      },
+      "name": "analysis.category_1",
+      "background": true
+    },
+    {
+      "v": 2,
+      "key": {
+        "analysis.followUpNeeded": 1
+      },
+      "name": "analysis.followUpNeeded_1",
+      "background": true
+    },
+    {
+      "v": 2,
+      "key": {
+        "userId": 1,
+        "createdAt": -1
+      },
+      "name": "userId_1_createdAt_-1",
+      "background": true
+    },
+    {
+      "v": 2,
+      "key": {
+        "twilioCallSid": 1
+      },
+      "name": "twilioCallSid_1",
+      "background": true
+    },
+    {
+      "v": 2,
+      "key": {
+        "status": 1
+      },
+      "name": "status_1",
+      "background": true
+    },
+    {
+      "v": 2,
+      "key": {
+        "userId": 1,
+        "status": 1
+      },
+      "name": "userId_1_status_1",
+      "background": true
+    },
+    {
+      "v": 2,
+      "key": {
+        "elevenLabsData.conversation_id": 1
+      },
+      "name": "elevenLabsData.conversation_id_1",
+      "background": true
+    },
+    {
+      "v": 2,
+      "key": {
+        "isInbound": 1,
+        "createdAt": -1
+      },
+      "name": "isInbound_1_createdAt_-1",
+      "background": true
+    },
+    {
+      "v": 2,
+      "key": {
+        "participants.phoneNumber": 1
+      },
+      "name": "participants.phoneNumber_1",
+      "background": true
+    },
+    {
+      "v": 2,
+      "key": {
+        "callerNumber": 1
+      },
+      "name": "callerNumber_1",
+      "background": true
+    },
+    {
+      "v": 2,
+      "key": {
+        "from": 1
+      },
+      "name": "from_1",
+      "background": true
+    },
+    {
+      "v": 2,
+      "key": {
+        "analysis.category": 1,
+        "createdAt": -1
+      },
+      "name": "analysis.category_1_createdAt_-1",
+      "background": true
+    },
+    {
+      "v": 2,
+      "key": {
+        "userId": 1,
+        "analysis.followUpNeeded": 1
+      },
+      "name": "userId_1_analysis.followUpNeeded_1",
+      "background": true
+    },
+    {
+      "v": 2,
+      "key": {
+        "userId": 1,
+        "analysis.category": 1,
+        "createdAt": -1
+      },
+      "name": "userId_1_analysis.category_1_createdAt_-1",
+      "background": true
+    }
+  ]
+}

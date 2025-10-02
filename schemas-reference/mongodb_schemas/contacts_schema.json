@@ -1,0 +1,26 @@
+{
+    "_id": {
+        "$oid": "68adcf26260379b1fd9a2783"
+    },
+    "userId": {
+        "$oid": "68adcc5c260379b1fd9a2614"
+    },
+    "name": "Adam 2",
+    "phoneNumber": "4845712062",
+    "email": "achain123@gmail.com",
+    "groups": [],
+    "tags": [],
+    "metadata": {
+        "source": "manual",
+        "callCount": 0,
+        "importBatch": "2025-09-05T13:24:33.647Z"
+    },
+    "isActive": true,
+    "createdAt": {
+        "$date": "2025-08-26T15:13:42.903Z"
+    },
+    "updatedAt": {
+        "$date": "2025-09-05T13:24:33.686Z"
+    },
+    "__v": 0
+}

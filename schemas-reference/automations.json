@@ -1,0 +1,1800 @@
+{
+  "isEmpty": false,
+  "sampleCount": 6,
+  "totalDocuments": 6,
+  "schema": {
+    "_id": {
+      "types": [
+        "object"
+      ],
+      "count": 6,
+      "examples": [
+        "[object]"
+      ],
+      "isArray": false,
+      "isNested": true,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "_id.buffer": {
+      "types": [
+        "object"
+      ],
+      "count": 6,
+      "examples": [
+        "[object]"
+      ],
+      "isArray": false,
+      "isNested": true,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "_id.buffer.0": {
+      "types": [
+        "number"
+      ],
+      "count": 6,
+      "examples": [
+        "104"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "_id.buffer.1": {
+      "types": [
+        "number"
+      ],
+      "count": 6,
+      "examples": [
+        "200",
+        "203",
+        "206"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "_id.buffer.2": {
+      "types": [
+        "number"
+      ],
+      "count": 6,
+      "examples": [
+        "23",
+        "139",
+        "165"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "_id.buffer.3": {
+      "types": [
+        "number"
+      ],
+      "count": 6,
+      "examples": [
+        "95",
+        "8",
+        "169"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "_id.buffer.4": {
+      "types": [
+        "number"
+      ],
+      "count": 6,
+      "examples": [
+        "230",
+        "51",
+        "98"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "_id.buffer.5": {
+      "types": [
+        "number"
+      ],
+      "count": 6,
+      "examples": [
+        "180",
+        "236",
+        "121"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "_id.buffer.6": {
+      "types": [
+        "number"
+      ],
+      "count": 6,
+      "examples": [
+        "209",
+        "26",
+        "192"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "_id.buffer.7": {
+      "types": [
+        "number"
+      ],
+      "count": 6,
+      "examples": [
+        "125",
+        "204",
+        "180"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "_id.buffer.8": {
+      "types": [
+        "number"
+      ],
+      "count": 6,
+      "examples": [
+        "177",
+        "171",
+        "247"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "_id.buffer.9": {
+      "types": [
+        "number"
+      ],
+      "count": 6,
+      "examples": [
+        "124",
+        "92",
+        "93"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "_id.buffer.10": {
+      "types": [
+        "number"
+      ],
+      "count": 6,
+      "examples": [
+        "217",
+        "253",
+        "10"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "_id.buffer.11": {
+      "types": [
+        "number"
+      ],
+      "count": 6,
+      "examples": [
+        "75",
+        "142",
+        "174"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "userId": {
+      "types": [
+        "object"
+      ],
+      "count": 6,
+      "examples": [
+        "[object]"
+      ],
+      "isArray": false,
+      "isNested": true,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "userId.buffer": {
+      "types": [
+        "object"
+      ],
+      "count": 6,
+      "examples": [
+        "[object]"
+      ],
+      "isArray": false,
+      "isNested": true,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "userId.buffer.0": {
+      "types": [
+        "number"
+      ],
+      "count": 6,
+      "examples": [
+        "104"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "userId.buffer.1": {
+      "types": [
+        "number"
+      ],
+      "count": 6,
+      "examples": [
+        "173",
+        "202",
+        "206"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "userId.buffer.2": {
+      "types": [
+        "number"
+      ],
+      "count": 6,
+      "examples": [
+        "204",
+        "253",
+        "213"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "userId.buffer.3": {
+      "types": [
+        "number"
+      ],
+      "count": 6,
+      "examples": [
+        "92",
+        "21",
+        "212"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "userId.buffer.4": {
+      "types": [
+        "number"
+      ],
+      "count": 6,
+      "examples": [
+        "38",
+        "89",
+        "115"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "userId.buffer.5": {
+      "types": [
+        "number"
+      ],
+      "count": 6,
+      "examples": [
+        "3",
+        "147",
+        "65"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "userId.buffer.6": {
+      "types": [
+        "number"
+      ],
+      "count": 6,
+      "examples": [
+        "121",
+        "240",
+        "152"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "userId.buffer.7": {
+      "types": [
+        "number"
+      ],
+      "count": 6,
+      "examples": [
+        "177",
+        "157",
+        "122"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "userId.buffer.8": {
+      "types": [
+        "number"
+      ],
+      "count": 6,
+      "examples": [
+        "253",
+        "148",
+        "63"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "userId.buffer.9": {
+      "types": [
+        "number"
+      ],
+      "count": 6,
+      "examples": [
+        "154",
+        "187",
+        "51"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "userId.buffer.10": {
+      "types": [
+        "number"
+      ],
+      "count": 6,
+      "examples": [
+        "38",
+        "58",
+        "127"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "userId.buffer.11": {
+      "types": [
+        "number"
+      ],
+      "count": 6,
+      "examples": [
+        "20",
+        "172",
+        "154"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "name": {
+      "types": [
+        "string"
+      ],
+      "count": 6,
+      "examples": [
+        "Test audio",
+        "test with voice",
+        "new with audio test"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "description": {
+      "types": [
+        "string"
+      ],
+      "count": 6,
+      "examples": [
+        "",
+        "8pm monday",
+        "follow up campaign"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "triggerType": {
+      "types": [
+        "string"
+      ],
+      "count": 3,
+      "examples": [
+        "on_date"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "50.0%",
+      "required": false
+    },
+    "offsetDays": {
+      "types": [
+        "number"
+      ],
+      "count": 3,
+      "examples": [
+        "0"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "50.0%",
+      "required": false
+    },
+    "offsetDirection": {
+      "types": [
+        "string"
+      ],
+      "count": 3,
+      "examples": [
+        "after"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "50.0%",
+      "required": false
+    },
+    "onDate": {
+      "types": [
+        "string"
+      ],
+      "count": 3,
+      "examples": [
+        "2025-09-15"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "50.0%",
+      "required": false
+    },
+    "onTime": {
+      "types": [
+        "string"
+      ],
+      "count": 3,
+      "examples": [
+        "10:00",
+        "18:00",
+        "20:00"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "50.0%",
+      "required": false
+    },
+    "aiInstructions": {
+      "types": [
+        "string"
+      ],
+      "count": 3,
+      "examples": [
+        "ask how the car loaner is going",
+        "hows the new car",
+        "tell me that aint mr caesar"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "50.0%",
+      "required": false
+    },
+    "callbackEnabled": {
+      "types": [
+        "boolean"
+      ],
+      "count": 3,
+      "examples": [
+        "true",
+        "false"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "50.0%",
+      "required": false
+    },
+    "callbackDelay": {
+      "types": [
+        "string"
+      ],
+      "count": 3,
+      "examples": [
+        "15min",
+        "2hr"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "50.0%",
+      "required": false
+    },
+    "callbackCustomDay": {
+      "types": [
+        "string"
+      ],
+      "count": 3,
+      "examples": [
+        "today"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "50.0%",
+      "required": false
+    },
+    "isActive": {
+      "types": [
+        "boolean"
+      ],
+      "count": 6,
+      "examples": [
+        "true",
+        "false"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "contactsCount": {
+      "types": [
+        "number"
+      ],
+      "count": 3,
+      "examples": [
+        "1",
+        "2"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "50.0%",
+      "required": false
+    },
+    "completedCount": {
+      "types": [
+        "number"
+      ],
+      "count": 3,
+      "examples": [
+        "0"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "50.0%",
+      "required": false
+    },
+    "pendingCount": {
+      "types": [
+        "number"
+      ],
+      "count": 3,
+      "examples": [
+        "1",
+        "0"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "50.0%",
+      "required": false
+    },
+    "executionHistory": {
+      "types": [
+        "array"
+      ],
+      "count": 3,
+      "examples": [
+        "[1 items]",
+        "[2 items]"
+      ],
+      "isArray": true,
+      "isNested": true,
+      "arrayElementType": "object",
+      "frequency": "50.0%",
+      "required": false
+    },
+    "executionHistory[].executedAt": {
+      "types": [
+        "object"
+      ],
+      "count": 4,
+      "examples": [
+        "[object]"
+      ],
+      "isArray": false,
+      "isNested": true,
+      "frequency": "66.7%",
+      "required": false
+    },
+    "executionHistory[].contactsProcessed": {
+      "types": [
+        "number"
+      ],
+      "count": 4,
+      "examples": [
+        "1"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "66.7%",
+      "required": false
+    },
+    "executionHistory[].successCount": {
+      "types": [
+        "number"
+      ],
+      "count": 4,
+      "examples": [
+        "1",
+        "0"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "66.7%",
+      "required": false
+    },
+    "executionHistory[].errorCount": {
+      "types": [
+        "number"
+      ],
+      "count": 4,
+      "examples": [
+        "0",
+        "1"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "66.7%",
+      "required": false
+    },
+    "executionHistory[].errors": {
+      "types": [
+        "array"
+      ],
+      "count": 4,
+      "examples": [
+        "[0 items]",
+        "[1 items]"
+      ],
+      "isArray": true,
+      "isNested": true,
+      "arrayElementType": "object",
+      "frequency": "66.7%",
+      "required": false
+    },
+    "executionHistory[]._id": {
+      "types": [
+        "object"
+      ],
+      "count": 4,
+      "examples": [
+        "[object]"
+      ],
+      "isArray": false,
+      "isNested": true,
+      "frequency": "66.7%",
+      "required": false
+    },
+    "executionHistory[]._id.buffer": {
+      "types": [
+        "object"
+      ],
+      "count": 4,
+      "examples": [
+        "[object]"
+      ],
+      "isArray": false,
+      "isNested": true,
+      "frequency": "66.7%",
+      "required": false
+    },
+    "executionHistory[]._id.buffer.0": {
+      "types": [
+        "number"
+      ],
+      "count": 4,
+      "examples": [
+        "104"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "66.7%",
+      "required": false
+    },
+    "executionHistory[]._id.buffer.1": {
+      "types": [
+        "number"
+      ],
+      "count": 4,
+      "examples": [
+        "200"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "66.7%",
+      "required": false
+    },
+    "executionHistory[]._id.buffer.2": {
+      "types": [
+        "number"
+      ],
+      "count": 4,
+      "examples": [
+        "23",
+        "140",
+        "167"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "66.7%",
+      "required": false
+    },
+    "executionHistory[]._id.buffer.3": {
+      "types": [
+        "number"
+      ],
+      "count": 4,
+      "examples": [
+        "186",
+        "64",
+        "141"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "66.7%",
+      "required": false
+    },
+    "executionHistory[]._id.buffer.4": {
+      "types": [
+        "number"
+      ],
+      "count": 4,
+      "examples": [
+        "205",
+        "51"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "66.7%",
+      "required": false
+    },
+    "executionHistory[]._id.buffer.5": {
+      "types": [
+        "number"
+      ],
+      "count": 4,
+      "examples": [
+        "159",
+        "236"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "66.7%",
+      "required": false
+    },
+    "executionHistory[]._id.buffer.6": {
+      "types": [
+        "number"
+      ],
+      "count": 4,
+      "examples": [
+        "159",
+        "26"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "66.7%",
+      "required": false
+    },
+    "executionHistory[]._id.buffer.7": {
+      "types": [
+        "number"
+      ],
+      "count": 4,
+      "examples": [
+        "115",
+        "204"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "66.7%",
+      "required": false
+    },
+    "executionHistory[]._id.buffer.8": {
+      "types": [
+        "number"
+      ],
+      "count": 4,
+      "examples": [
+        "250",
+        "171"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "66.7%",
+      "required": false
+    },
+    "executionHistory[]._id.buffer.9": {
+      "types": [
+        "number"
+      ],
+      "count": 4,
+      "examples": [
+        "210",
+        "93"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "66.7%",
+      "required": false
+    },
+    "executionHistory[]._id.buffer.10": {
+      "types": [
+        "number"
+      ],
+      "count": 4,
+      "examples": [
+        "80",
+        "0",
+        "11"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "66.7%",
+      "required": false
+    },
+    "executionHistory[]._id.buffer.11": {
+      "types": [
+        "number"
+      ],
+      "count": 4,
+      "examples": [
+        "91",
+        "120",
+        "181"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "66.7%",
+      "required": false
+    },
+    "createdAt": {
+      "types": [
+        "object"
+      ],
+      "count": 6,
+      "examples": [
+        "[object]"
+      ],
+      "isArray": false,
+      "isNested": true,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "updatedAt": {
+      "types": [
+        "object"
+      ],
+      "count": 6,
+      "examples": [
+        "[object]"
+      ],
+      "isArray": false,
+      "isNested": true,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "nextRun": {
+      "types": [
+        "object"
+      ],
+      "count": 3,
+      "examples": [
+        "[object]"
+      ],
+      "isArray": false,
+      "isNested": true,
+      "frequency": "50.0%",
+      "required": false
+    },
+    "__v": {
+      "types": [
+        "number"
+      ],
+      "count": 3,
+      "examples": [
+        "1",
+        "2"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "50.0%",
+      "required": false
+    },
+    "lastRun": {
+      "types": [
+        "object"
+      ],
+      "count": 2,
+      "examples": [
+        "[object]"
+      ],
+      "isArray": false,
+      "isNested": true,
+      "frequency": "33.3%",
+      "required": false
+    },
+    "daysOffset": {
+      "types": [
+        "number"
+      ],
+      "count": 6,
+      "examples": [
+        "7"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "fixedDate": {
+      "types": [
+        "null",
+        "string"
+      ],
+      "count": 6,
+      "examples": [
+        "2025-09-17T00:00:00.000-04:00",
+        "2025-09-20T00:00:00.000-04:00"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "timeOfDay": {
+      "types": [
+        "string"
+      ],
+      "count": 6,
+      "examples": [
+        "09:00",
+        "18:12",
+        "22:11"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "timezone": {
+      "types": [
+        "string"
+      ],
+      "count": 6,
+      "examples": [
+        "America/New_York"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "timingMode": {
+      "types": [
+        "string"
+      ],
+      "count": 6,
+      "examples": [
+        "after",
+        "on_date",
+        "same_day"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "100.0%",
+      "required": true
+    },
+    "voiceAudioUrl": {
+      "types": [
+        "string"
+      ],
+      "count": 2,
+      "examples": [
+        "https://storage.googleapis.com/heyway-voice-recordings/recordings/68adcc5c260379b1fd9a2614/1346e549-2945-4fcd-a5db-74b976336563-1757973251867.webm",
+        "https://storage.googleapis.com/heyway-voice-recordings/recordings/68adcc5c260379b1fd9a2614/3f21d844-6fcb-4eae-87d0-430ea3cf9414-1757980071180.webm"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "33.3%",
+      "required": false
+    },
+    "executionHistory[].errors[].contactId": {
+      "types": [
+        "null"
+      ],
+      "count": 2,
+      "examples": [],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "33.3%",
+      "required": false
+    },
+    "executionHistory[].errors[].timestamp": {
+      "types": [
+        "object"
+      ],
+      "count": 2,
+      "examples": [
+        "[object]"
+      ],
+      "isArray": false,
+      "isNested": true,
+      "frequency": "33.3%",
+      "required": false
+    },
+    "executionHistory[].errors[]._id": {
+      "types": [
+        "object"
+      ],
+      "count": 2,
+      "examples": [
+        "[object]"
+      ],
+      "isArray": false,
+      "isNested": true,
+      "frequency": "33.3%",
+      "required": false
+    },
+    "executionHistory[].errors[]._id.buffer": {
+      "types": [
+        "object"
+      ],
+      "count": 2,
+      "examples": [
+        "[object]"
+      ],
+      "isArray": false,
+      "isNested": true,
+      "frequency": "33.3%",
+      "required": false
+    },
+    "executionHistory[].errors[]._id.buffer.0": {
+      "types": [
+        "number"
+      ],
+      "count": 2,
+      "examples": [
+        "104"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "33.3%",
+      "required": false
+    },
+    "executionHistory[].errors[]._id.buffer.1": {
+      "types": [
+        "number"
+      ],
+      "count": 2,
+      "examples": [
+        "200"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "33.3%",
+      "required": false
+    },
+    "executionHistory[].errors[]._id.buffer.2": {
+      "types": [
+        "number"
+      ],
+      "count": 2,
+      "examples": [
+        "167"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "33.3%",
+      "required": false
+    },
+    "executionHistory[].errors[]._id.buffer.3": {
+      "types": [
+        "number"
+      ],
+      "count": 2,
+      "examples": [
+        "141",
+        "210"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "33.3%",
+      "required": false
+    },
+    "executionHistory[].errors[]._id.buffer.4": {
+      "types": [
+        "number"
+      ],
+      "count": 2,
+      "examples": [
+        "51"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "33.3%",
+      "required": false
+    },
+    "executionHistory[].errors[]._id.buffer.5": {
+      "types": [
+        "number"
+      ],
+      "count": 2,
+      "examples": [
+        "236"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "33.3%",
+      "required": false
+    },
+    "executionHistory[].errors[]._id.buffer.6": {
+      "types": [
+        "number"
+      ],
+      "count": 2,
+      "examples": [
+        "26"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "33.3%",
+      "required": false
+    },
+    "executionHistory[].errors[]._id.buffer.7": {
+      "types": [
+        "number"
+      ],
+      "count": 2,
+      "examples": [
+        "204"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "33.3%",
+      "required": false
+    },
+    "executionHistory[].errors[]._id.buffer.8": {
+      "types": [
+        "number"
+      ],
+      "count": 2,
+      "examples": [
+        "171"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "33.3%",
+      "required": false
+    },
+    "executionHistory[].errors[]._id.buffer.9": {
+      "types": [
+        "number"
+      ],
+      "count": 2,
+      "examples": [
+        "93"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "33.3%",
+      "required": false
+    },
+    "executionHistory[].errors[]._id.buffer.10": {
+      "types": [
+        "number"
+      ],
+      "count": 2,
+      "examples": [
+        "11",
+        "12"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "33.3%",
+      "required": false
+    },
+    "executionHistory[].errors[]._id.buffer.11": {
+      "types": [
+        "number"
+      ],
+      "count": 2,
+      "examples": [
+        "182",
+        "172"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "33.3%",
+      "required": false
+    },
+    "audioMessage": {
+      "types": [
+        "string"
+      ],
+      "count": 3,
+      "examples": [
+        "68cb2bf86279c0b4f77b4057",
+        "68ced68e7341987a3f337f9c",
+        "68caf17e1c436119286533b5"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "50.0%",
+      "required": false
+    },
+    "scheduledFor": {
+      "types": [
+        "null"
+      ],
+      "count": 3,
+      "examples": [],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "50.0%",
+      "required": false
+    },
+    "useAIVoice": {
+      "types": [
+        "boolean"
+      ],
+      "count": 3,
+      "examples": [
+        "false"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "50.0%",
+      "required": false
+    },
+    "aiVoiceText": {
+      "types": [
+        "null",
+        "string"
+      ],
+      "count": 3,
+      "examples": [
+        ""
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "50.0%",
+      "required": false
+    },
+    "aiVoiceSettings": {
+      "types": [
+        "null"
+      ],
+      "count": 3,
+      "examples": [],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "50.0%",
+      "required": false
+    },
+    "useAIResponse": {
+      "types": [
+        "boolean"
+      ],
+      "count": 3,
+      "examples": [
+        "true"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "50.0%",
+      "required": false
+    },
+    "contacts": {
+      "types": [
+        "array"
+      ],
+      "count": 3,
+      "examples": [
+        "[1 items]"
+      ],
+      "isArray": true,
+      "isNested": true,
+      "arrayElementType": "object",
+      "frequency": "50.0%",
+      "required": false
+    },
+    "contacts[].name": {
+      "types": [
+        "string"
+      ],
+      "count": 3,
+      "examples": [
+        "rye boeh",
+        "adam",
+        "Adam"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "50.0%",
+      "required": false
+    },
+    "contacts[].phone": {
+      "types": [
+        "number",
+        "string"
+      ],
+      "count": 3,
+      "examples": [
+        "7245137329",
+        "4845712062",
+        "(484) 571-2062"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "50.0%",
+      "required": false
+    },
+    "contacts[].referenceDate": {
+      "types": [
+        "object"
+      ],
+      "count": 3,
+      "examples": [
+        "[object]"
+      ],
+      "isArray": false,
+      "isNested": true,
+      "frequency": "50.0%",
+      "required": false
+    },
+    "contacts[].scheduledFor": {
+      "types": [
+        "object"
+      ],
+      "count": 3,
+      "examples": [
+        "[object]"
+      ],
+      "isArray": false,
+      "isNested": true,
+      "frequency": "50.0%",
+      "required": false
+    },
+    "contacts[].status": {
+      "types": [
+        "string"
+      ],
+      "count": 3,
+      "examples": [
+        "outdated",
+        "called"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "50.0%",
+      "required": false
+    },
+    "contacts[].createdAt": {
+      "types": [
+        "object"
+      ],
+      "count": 3,
+      "examples": [
+        "[object]"
+      ],
+      "isArray": false,
+      "isNested": true,
+      "frequency": "50.0%",
+      "required": false
+    },
+    "contacts[].outdated": {
+      "types": [
+        "boolean"
+      ],
+      "count": 3,
+      "examples": [
+        "true",
+        "false"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "50.0%",
+      "required": false
+    },
+    "contacts[].statusReason": {
+      "types": [
+        "string"
+      ],
+      "count": 1,
+      "examples": [
+        "Scheduled time has passed"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "16.7%",
+      "required": false
+    },
+    "contacts[].outdatedAt": {
+      "types": [
+        "object"
+      ],
+      "count": 1,
+      "examples": [
+        "[object]"
+      ],
+      "isArray": false,
+      "isNested": true,
+      "frequency": "16.7%",
+      "required": false
+    },
+    "contacts[].recalculatedAt": {
+      "types": [
+        "object"
+      ],
+      "count": 1,
+      "examples": [
+        "[object]"
+      ],
+      "isArray": false,
+      "isNested": true,
+      "frequency": "16.7%",
+      "required": false
+    },
+    "enableCallback": {
+      "types": [
+        "boolean"
+      ],
+      "count": 2,
+      "examples": [
+        "true"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "33.3%",
+      "required": false
+    },
+    "callbackDelayMinutes": {
+      "types": [
+        "number"
+      ],
+      "count": 2,
+      "examples": [
+        "30",
+        "15"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "33.3%",
+      "required": false
+    },
+    "callbackMaxDelayDays": {
+      "types": [
+        "number"
+      ],
+      "count": 1,
+      "examples": [
+        "7"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "16.7%",
+      "required": false
+    },
+    "callbackTimeOfDay": {
+      "types": [
+        "string"
+      ],
+      "count": 2,
+      "examples": [
+        "09:00"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "33.3%",
+      "required": false
+    },
+    "contacts[].callId": {
+      "types": [
+        "object"
+      ],
+      "count": 2,
+      "examples": [
+        "[object]"
+      ],
+      "isArray": false,
+      "isNested": true,
+      "frequency": "33.3%",
+      "required": false
+    },
+    "contacts[].callId.buffer": {
+      "types": [
+        "object"
+      ],
+      "count": 2,
+      "examples": [
+        "[object]"
+      ],
+      "isArray": false,
+      "isNested": true,
+      "frequency": "33.3%",
+      "required": false
+    },
+    "contacts[].callId.buffer.0": {
+      "types": [
+        "number"
+      ],
+      "count": 2,
+      "examples": [
+        "104"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "33.3%",
+      "required": false
+    },
+    "contacts[].callId.buffer.1": {
+      "types": [
+        "number"
+      ],
+      "count": 2,
+      "examples": [
+        "207"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "33.3%",
+      "required": false
+    },
+    "contacts[].callId.buffer.2": {
+      "types": [
+        "number"
+      ],
+      "count": 2,
+      "examples": [
+        "95",
+        "78"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "33.3%",
+      "required": false
+    },
+    "contacts[].callId.buffer.3": {
+      "types": [
+        "number"
+      ],
+      "count": 2,
+      "examples": [
+        "164",
+        "16"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "33.3%",
+      "required": false
+    },
+    "contacts[].callId.buffer.4": {
+      "types": [
+        "number"
+      ],
+      "count": 2,
+      "examples": [
+        "227"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "33.3%",
+      "required": false
+    },
+    "contacts[].callId.buffer.5": {
+      "types": [
+        "number"
+      ],
+      "count": 2,
+      "examples": [
+        "44"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "33.3%",
+      "required": false
+    },
+    "contacts[].callId.buffer.6": {
+      "types": [
+        "number"
+      ],
+      "count": 2,
+      "examples": [
+        "184"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "33.3%",
+      "required": false
+    },
+    "contacts[].callId.buffer.7": {
+      "types": [
+        "number"
+      ],
+      "count": 2,
+      "examples": [
+        "82"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "33.3%",
+      "required": false
+    },
+    "contacts[].callId.buffer.8": {
+      "types": [
+        "number"
+      ],
+      "count": 2,
+      "examples": [
+        "140"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "33.3%",
+      "required": false
+    },
+    "contacts[].callId.buffer.9": {
+      "types": [
+        "number"
+      ],
+      "count": 2,
+      "examples": [
+        "131"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "33.3%",
+      "required": false
+    },
+    "contacts[].callId.buffer.10": {
+      "types": [
+        "number"
+      ],
+      "count": 2,
+      "examples": [
+        "187"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "33.3%",
+      "required": false
+    },
+    "contacts[].callId.buffer.11": {
+      "types": [
+        "number"
+      ],
+      "count": 2,
+      "examples": [
+        "171",
+        "169"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "33.3%",
+      "required": false
+    },
+    "contacts[].callSid": {
+      "types": [
+        "string"
+      ],
+      "count": 2,
+      "examples": [
+        "CA2b78e8450cd3c6bdee564bf0ba9cba31",
+        "CA39d1f31a4ffb707363d8fb7b17fd3e53"
+      ],
+      "isArray": false,
+      "isNested": false,
+      "frequency": "33.3%",
+      "required": false
+    },
+    "contacts[].calledAt": {
+      "types": [
+        "object"
+      ],
+      "count": 2,
+      "examples": [
+        "[object]"
+      ],
+      "isArray": false,
+      "isNested": true,
+      "frequency": "33.3%",
+      "required": false
+    }
+  },
+  "indexes": [
+    {
+      "v": 2,
+      "key": {
+        "_id": 1
+      },
+      "name": "_id_"
+    },
+    {
+      "v": 2,
+      "key": {
+        "userId": 1
+      },
+      "name": "userId_1",
+      "background": true
+    },
+    {
+      "v": 2,
+      "key": {
+        "userId": 1,
+        "isActive": 1
+      },
+      "name": "userId_1_isActive_1",
+      "background": true
+    },
+    {
+      "v": 2,
+      "key": {
+        "userId": 1,
+        "nextRun": 1
+      },
+      "name": "userId_1_nextRun_1",
+      "background": true
+    },
+    {
+      "v": 2,
+      "key": {
+        "isActive": 1,
+        "nextRun": 1
+      },
+      "name": "isActive_1_nextRun_1",
+      "background": true
+    }
+  ]
+}
