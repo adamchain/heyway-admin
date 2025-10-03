@@ -89,8 +89,8 @@ app.get('/api/feedbacks', async (req: Request, res: Response) => {
 
 // Health check endpoint
 app.get('/health', (req: Request, res: Response) => {
-    res.status(200).json({ 
-        status: 'healthy', 
+    res.status(200).json({
+        status: 'healthy',
         timestamp: new Date().toISOString(),
         uptime: process.uptime()
     });
@@ -99,8 +99,8 @@ app.get('/health', (req: Request, res: Response) => {
 // Serve static files in production
 if (process.env.NODE_ENV === 'production') {
     app.use(express.static('dist'));
-    
-    app.get('/*', (req: Request, res: Response) => {
+
+    app.get('*', (req: Request, res: Response) => {
         res.sendFile('index.html', { root: 'dist' });
     });
 }
