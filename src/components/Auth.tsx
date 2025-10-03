@@ -24,7 +24,7 @@ const Auth: React.FC<AuthProps> = ({ onLogin }) => {
         } else {
             setError('Invalid credentials. Use admin/getheyway2024 for demo.');
         }
-        
+
         setLoading(false);
     };
 
@@ -46,8 +46,8 @@ const Auth: React.FC<AuthProps> = ({ onLogin }) => {
                 maxWidth: '400px'
             }}>
                 <div style={{ textAlign: 'center', marginBottom: '30px' }}>
-                    <h1 style={{ 
-                        color: '#2c3e50', 
+                    <h1 style={{
+                        color: '#2c3e50',
                         marginBottom: '10px',
                         fontSize: '28px',
                         fontWeight: 'bold'
@@ -75,6 +75,7 @@ const Auth: React.FC<AuthProps> = ({ onLogin }) => {
                             value={username}
                             onChange={(e) => setUsername(e.target.value)}
                             placeholder="Enter username"
+                            autoComplete="username"
                             required
                             style={{
                                 width: '100%',
@@ -103,6 +104,7 @@ const Auth: React.FC<AuthProps> = ({ onLogin }) => {
                             value={password}
                             onChange={(e) => setPassword(e.target.value)}
                             placeholder="Enter password"
+                            autoComplete="current-password"
                             required
                             style={{
                                 width: '100%',

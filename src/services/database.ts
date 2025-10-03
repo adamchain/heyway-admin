@@ -47,6 +47,11 @@ export const getFeedbacks = async () => {
     return await apiRequest('/feedbacks');
 };
 
+// Enhanced dashboard statistics
+export const getDashboardStats = async () => {
+    return await apiRequest('/dashboard/stats');
+};
+
 // Additional utility functions for production
 export const createUser = async (userData: any) => {
     return await apiRequest('/users', {

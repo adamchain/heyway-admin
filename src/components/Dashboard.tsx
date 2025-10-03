@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, BarChart, Bar, PieChart, Pie, Cell, ComposedChart } from 'recharts';
-import { getCalls, getSubscriptions, getUsers, getAutomations, getFeedbacks } from '../services/database';
+import { getCalls, getSubscriptions, getUsers, getAutomations, getFeedbacks, getDashboardStats } from '../services/database';
+import UserGrowthChart from './UserGrowthChart';
+import EnhancedUserList from './EnhancedUserList';
 import type { Call } from '../data/calls';
 import type { Subscription } from '../data/subscriptions';
 
@@ -16,12 +18,62 @@ interface DashboardMetrics {
     pendingTickets: number;
 }
 
+interface EnhancedDashboardStats {
+    // User Activity Metrics
+    totalUsers: number;
+    activeUsers: number;
+    lastActiveUsers: number;
+
+    // System Performance Metrics
+    totalCalls: number;
+    successfulCalls: number;
+    callSuccessRate: number;
+    inboundCalls: number;
+    outboundCalls: number;
+
+    // Active Automations
+    activeAutomations: number;
+    totalAutomations: number;
+
+    // Usage Statistics
+    totalMinutesUsed: number;
+    freeUsers: number;
+    paidUsers: number;
+
+    // Content & Engagement
+    totalContacts: number;
+    totalRecordings: number;
+    contactListActivity: number;
+
+    // Revenue Metrics
+    totalRevenue: number;
+    monthlyRevenue: number;
+
+    // User Growth by Day (last 30 days)
+    userGrowthByDay: Array<{
+        date: string;
+        users: number;
+        cumulative: number;
+    }>;
+
+    // Most Active Users (last 30 days)
+    mostActiveUsers: Array<{
+        userId: string;
+        name: string;
+        email: string;
+        callCount: number;
+        lastCallDate: string;
+        subscription: string;
+    }>;
+}
+
 const Dashboard: React.FC = () => {
     const [calls, setCalls] = useState<Call[]>([]);
     const [subscriptions, setSubscriptions] = useState<Subscription[]>([]);
     const [users, setUsers] = useState<any[]>([]);
     const [automations, setAutomations] = useState<any[]>([]);
     const [feedbacks, setFeedbacks] = useState<any[]>([]);
+    const [enhancedStats, setEnhancedStats] = useState<EnhancedDashboardStats | null>(null);
     const [loading, setLoading] = useState(true);
     const [metrics, setMetrics] = useState<DashboardMetrics>({
         totalUsers: 0,
@@ -38,12 +90,13 @@ const Dashboard: React.FC = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const [callsData, subsData, usersData, automationsData, feedbacksData] = await Promise.all([
+                const [callsData, subsData, usersData, automationsData, feedbacksData, enhancedStatsData] = await Promise.all([
                     getCalls(),
                     getSubscriptions(),
                     getUsers(),
                     getAutomations(),
-                    getFeedbacks()
+                    getFeedbacks(),
+                    getDashboardStats()
                 ]);
 
                 setCalls(callsData as unknown as Call[]);
@@ -51,6 +104,7 @@ const Dashboard: React.FC = () => {
                 setUsers(usersData as unknown as any[]);
                 setAutomations(automationsData as unknown as any[]);
                 setFeedbacks(feedbacksData as unknown as any[]);
+                setEnhancedStats(enhancedStatsData as unknown as EnhancedDashboardStats);
 
                 // Calculate metrics
                 const totalUsers = usersData.length;
@@ -299,6 +353,16 @@ const Dashboard: React.FC = () => {
                 </div>
             </div>
 
+            {/* Enhanced User Growth Chart */}
+            {enhancedStats && (
+                <div style={{ marginBottom: '40px' }}>
+                    <UserGrowthChart
+                        data={enhancedStats.userGrowthByDay}
+                        loading={loading}
+                    />
+                </div>
+            )}
+
             {/* Charts Grid */}
             <div style={{
                 display: 'grid',
@@ -306,38 +370,6 @@ const Dashboard: React.FC = () => {
                 gap: '30px',
                 marginBottom: '40px'
             }}>
-                {/* User Growth Chart */}
-                <div style={{
-                    backgroundColor: 'white',
-                    padding: '25px',
-                    borderRadius: '12px',
-                    boxShadow: '0 2px 10px rgba(0,0,0,0.1)'
-                }}>
-                    <h2 style={{ marginBottom: '20px', color: '#2c3e50' }}>User Growth Trend</h2>
-                    <ResponsiveContainer width="100%" height={300}>
-                        <LineChart data={userGrowthData}>
-                            <CartesianGrid strokeDasharray="3 3" stroke="#ecf0f1" />
-                            <XAxis dataKey="month" stroke="#7f8c8d" />
-                            <YAxis stroke="#7f8c8d" />
-                            <Tooltip
-                                contentStyle={{
-                                    backgroundColor: '#2c3e50',
-                                    border: 'none',
-                                    borderRadius: '8px',
-                                    color: 'white'
-                                }}
-                            />
-                            <Legend />
-                            <Line
-                                type="monotone"
-                                dataKey="cumulative"
-                                stroke="#3498db"
-                                strokeWidth={3}
-                                dot={{ fill: '#3498db', strokeWidth: 2, r: 4 }}
-                            />
-                        </LineChart>
-                    </ResponsiveContainer>
-                </div>
 
                 {/* Call Analytics */}
                 <div style={{
@@ -471,6 +503,147 @@ const Dashboard: React.FC = () => {
                     </div>
                 </div>
             </div>
+
+            {/* Enhanced Statistics Cards */}
+            {enhancedStats && (
+                <div style={{
+                    display: 'grid',
+                    gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))',
+                    gap: '20px',
+                    marginBottom: '40px'
+                }}>
+                    <div style={{
+                        padding: '25px',
+                        backgroundColor: 'white',
+                        borderRadius: '12px',
+                        boxShadow: '0 2px 10px rgba(0,0,0,0.1)',
+                        borderLeft: '4px solid #9b59b6'
+                    }}>
+                        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                            <div>
+                                <h3 style={{ margin: '0 0 10px 0', color: '#7f8c8d', fontSize: '14px' }}>Last Active Users</h3>
+                                <p style={{ fontSize: '2.5em', fontWeight: 'bold', margin: 0, color: '#2c3e50' }}>
+                                    {enhancedStats.lastActiveUsers.toLocaleString()}
+                                </p>
+                                <p style={{ margin: '5px 0 0 0', color: '#9b59b6', fontSize: '14px' }}>
+                                    Last 30 days
+                                </p>
+                            </div>
+                            <div style={{ fontSize: '2em', color: '#9b59b6' }}>⚡</div>
+                        </div>
+                    </div>
+
+                    <div style={{
+                        padding: '25px',
+                        backgroundColor: 'white',
+                        borderRadius: '12px',
+                        boxShadow: '0 2px 10px rgba(0,0,0,0.1)',
+                        borderLeft: '4px solid #1abc9c'
+                    }}>
+                        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                            <div>
+                                <h3 style={{ margin: '0 0 10px 0', color: '#7f8c8d', fontSize: '14px' }}>Call Success Rate</h3>
+                                <p style={{ fontSize: '2.5em', fontWeight: 'bold', margin: 0, color: '#2c3e50' }}>
+                                    {enhancedStats.callSuccessRate.toFixed(1)}%
+                                </p>
+                                <p style={{ margin: '5px 0 0 0', color: '#1abc9c', fontSize: '14px' }}>
+                                    {enhancedStats.successfulCalls} of {enhancedStats.totalCalls} calls
+                                </p>
+                            </div>
+                            <div style={{ fontSize: '2em', color: '#1abc9c' }}>📊</div>
+                        </div>
+                    </div>
+
+                    <div style={{
+                        padding: '25px',
+                        backgroundColor: 'white',
+                        borderRadius: '12px',
+                        boxShadow: '0 2px 10px rgba(0,0,0,0.1)',
+                        borderLeft: '4px solid #e67e22'
+                    }}>
+                        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                            <div>
+                                <h3 style={{ margin: '0 0 10px 0', color: '#7f8c8d', fontSize: '14px' }}>Total Minutes Used</h3>
+                                <p style={{ fontSize: '2.5em', fontWeight: 'bold', margin: 0, color: '#2c3e50' }}>
+                                    {Math.round(enhancedStats.totalMinutesUsed / 60)}h
+                                </p>
+                                <p style={{ margin: '5px 0 0 0', color: '#e67e22', fontSize: '14px' }}>
+                                    {enhancedStats.totalMinutesUsed} minutes
+                                </p>
+                            </div>
+                            <div style={{ fontSize: '2em', color: '#e67e22' }}>⏱️</div>
+                        </div>
+                    </div>
+
+                    <div style={{
+                        padding: '25px',
+                        backgroundColor: 'white',
+                        borderRadius: '12px',
+                        boxShadow: '0 2px 10px rgba(0,0,0,0.1)',
+                        borderLeft: '4px solid #8e44ad'
+                    }}>
+                        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                            <div>
+                                <h3 style={{ margin: '0 0 10px 0', color: '#7f8c8d', fontSize: '14px' }}>Content & Engagement</h3>
+                                <p style={{ fontSize: '2.5em', fontWeight: 'bold', margin: 0, color: '#2c3e50' }}>
+                                    {enhancedStats.totalContacts + enhancedStats.totalRecordings}
+                                </p>
+                                <p style={{ margin: '5px 0 0 0', color: '#8e44ad', fontSize: '14px' }}>
+                                    {enhancedStats.totalContacts} contacts, {enhancedStats.totalRecordings} recordings
+                                </p>
+                            </div>
+                            <div style={{ fontSize: '2em', color: '#8e44ad' }}>📝</div>
+                        </div>
+                    </div>
+                </div>
+            )}
+
+            {/* Most Active Users */}
+            {enhancedStats && enhancedStats.mostActiveUsers.length > 0 && (
+                <div style={{
+                    backgroundColor: 'white',
+                    padding: '25px',
+                    borderRadius: '12px',
+                    boxShadow: '0 2px 10px rgba(0,0,0,0.1)',
+                    marginBottom: '40px'
+                }}>
+                    <h2 style={{ marginBottom: '20px', color: '#2c3e50' }}>Most Active Users (Last 30 Days)</h2>
+                    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '15px' }}>
+                        {enhancedStats.mostActiveUsers.slice(0, 6).map((user, index) => (
+                            <div key={user.userId} style={{
+                                padding: '15px',
+                                backgroundColor: '#f8f9fa',
+                                borderRadius: '8px',
+                                borderLeft: '4px solid #3498db'
+                            }}>
+                                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '10px' }}>
+                                    <div>
+                                        <div style={{ fontWeight: 'bold', color: '#2c3e50' }}>{user.name}</div>
+                                        <div style={{ fontSize: '12px', color: '#7f8c8d' }}>{user.email}</div>
+                                    </div>
+                                    <div style={{ textAlign: 'right' }}>
+                                        <div style={{ fontSize: '18px', fontWeight: 'bold', color: '#3498db' }}>
+                                            {user.callCount}
+                                        </div>
+                                        <div style={{ fontSize: '10px', color: '#7f8c8d' }}>calls</div>
+                                    </div>
+                                </div>
+                                <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '12px', color: '#7f8c8d' }}>
+                                    <span>Last: {new Date(user.lastCallDate).toLocaleDateString()}</span>
+                                    <span style={{
+                                        padding: '2px 6px',
+                                        borderRadius: '4px',
+                                        backgroundColor: user.subscription === 'active' ? '#d4edda' : '#f8d7da',
+                                        color: user.subscription === 'active' ? '#155724' : '#721c24'
+                                    }}>
+                                        {user.subscription}
+                                    </span>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            )}
 
             {/* Recent Activity */}
             <div style={{

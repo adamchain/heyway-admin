@@ -9,12 +9,7 @@ interface NavigationProps {
 
 const Navigation: React.FC<NavigationProps> = ({ activeTab, onTabChange, onLogout, currentUser }) => {
     const tabs = [
-        { id: 'dashboard', label: 'Dashboard', icon: '📊' },
-        { id: 'users', label: 'Users', icon: '👥' },
-        { id: 'customer-service', label: 'Customer Service', icon: '🎧' },
-        { id: 'analytics', label: 'Analytics', icon: '📈' },
-        { id: 'monitoring', label: 'Monitoring', icon: '🔍' },
-        { id: 'settings', label: 'Settings', icon: '⚙️' },
+        { id: 'user-activity', label: 'User Activity Dashboard', icon: '⚡' },
     ];
 
     return (
