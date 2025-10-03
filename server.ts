@@ -264,9 +264,14 @@ app.get('/health', (req: Request, res: Response) => {
 if (process.env.NODE_ENV === 'production') {
     app.use(express.static('dist'));
 
-    // Catch-all handler for SPA routing - use middleware approach for Express 5
-    app.use((req: Request, res: Response, next: any) => {
-        res.sendFile('index.html', { root: 'dist' });
+    // Catch-all handler for SPA routing - serve index.html for all non-API routes
+    app.get('*', (req: Request, res: Response) => {
+        // Only serve index.html for non-API routes
+        if (!req.path.startsWith('/api')) {
+            res.sendFile('index.html', { root: 'dist' });
+        } else {
+            res.status(404).json({ error: 'API endpoint not found' });
+        }
     });
 }
 
