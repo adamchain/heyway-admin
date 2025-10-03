@@ -12,7 +12,7 @@
     "preview": "vite preview",
     "server": "tsx server.ts",
     "server:prod": "NODE_ENV=production tsx server.ts",
-    "start": "npm run build && npm run server:prod"
+    "start": "NODE_ENV=production tsx server.ts"
   },
   "dependencies": {
     "@tanstack/react-table": "^8.21.3",
