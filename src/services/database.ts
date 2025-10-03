@@ -1,4 +1,26 @@
-const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:3001/api';
+// Determine API base URL based on environment
+const getApiBaseUrl = () => {
+    // If VITE_API_BASE_URL is set, use it
+    if (import.meta.env.VITE_API_BASE_URL) {
+        return import.meta.env.VITE_API_BASE_URL;
+    }
+    
+    // For production, try to use the same domain as the frontend
+    if (import.meta.env.PROD) {
+        // In production, the API should be on the same domain as the frontend
+        return '/api';
+    }
+    
+    // For development, use localhost
+    return 'http://localhost:3001/api';
+};
+
+const API_BASE_URL = getApiBaseUrl();
+
+// Debug logging for API URL
+console.log('API_BASE_URL:', API_BASE_URL);
+console.log('Environment:', import.meta.env.MODE);
+console.log('VITE_API_BASE_URL:', import.meta.env.VITE_API_BASE_URL);
 
 // Default headers for API requests
 const getHeaders = () => ({
