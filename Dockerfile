@@ -37,7 +37,7 @@ RUN npm ci --only=production && npm cache clean --force
 
 # Copy built application from builder stage
 COPY --from=builder /app/dist ./dist
-COPY --from=builder /app/server.ts ./
+COPY --from=builder /app/server.ts ./server.ts
 
 # Change ownership to nodejs user
 RUN chown -R nodejs:nodejs /app
