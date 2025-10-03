@@ -16,6 +16,7 @@ interface User {
     name: string;
     email: string;
     createdAt: string;
+    updatedAt?: string;
     subscription?: {
         status: 'active' | 'inactive' | 'trial' | 'cancelled';
         plan: string;
@@ -62,7 +63,7 @@ const EnhancedUserList: React.FC = () => {
 
             return {
                 ...user,
-                lastActivity: lastCall ? (lastCall.createdAt || lastCall.startedAt) : user.updatedAt || user.createdAt,
+                lastActivity: lastCall ? (lastCall.createdAt || lastCall.startedAt) : (user.updatedAt || user.createdAt),
                 callCount: recentCalls.length,
                 totalMinutes: Math.round(totalMinutes),
                 subscriptionStatus: user.subscription?.status || (user.hasActiveSubscription ? 'active' : 'inactive'),
