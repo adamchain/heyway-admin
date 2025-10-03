@@ -100,7 +100,7 @@ app.get('/health', (req: Request, res: Response) => {
 if (process.env.NODE_ENV === 'production') {
     app.use(express.static('dist'));
     
-    app.get('*', (req: Request, res: Response) => {
+    app.get('/*', (req: Request, res: Response) => {
         res.sendFile('index.html', { root: 'dist' });
     });
 }
