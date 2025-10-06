@@ -32,12 +32,13 @@ WORKDIR /app
 # Copy package files
 COPY package*.json ./
 
-# Install only production dependencies
+# Install production dependencies including tsx for TypeScript execution
 RUN npm ci --only=production && npm cache clean --force
 
 # Copy built application from builder stage
 COPY --from=builder /app/dist ./dist
 COPY --from=builder /app/server.ts ./server.ts
+COPY --from=builder /app/package*.json ./
 
 # Change ownership to nodejs user
 RUN chown -R nodejs:nodejs /app
@@ -50,4 +51,4 @@ EXPOSE 3001
 
 # Start the application
 ENTRYPOINT ["dumb-init", "--"]
-CMD ["node", "server.ts"]
+CMD ["npx", "tsx", "server.ts"]
